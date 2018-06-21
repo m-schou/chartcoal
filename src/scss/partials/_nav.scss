@@ -1,7 +1,11 @@
 .nav {
+
   ul {
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
     li {
+      margin-left: 10px;
       a {
 
       }

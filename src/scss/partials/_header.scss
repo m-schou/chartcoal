@@ -1,9 +1,15 @@
 .header {
-
+  background: white;
+  .section {
+    max-width: 1220px;
+    border-bottom: solid rgba(35,42,59,0.06) 2px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 .logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
+  margin: 0 0 0 0;
   img {
 
   }
