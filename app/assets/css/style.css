@@ -391,15 +391,23 @@ textarea {
   /* 2 */ }
 
 .header {
-  background: white; }
+  background: white;
+  border-bottom: solid rgba(35, 42, 59, 0.06) 2px; }
   .header .section {
+    height: 92px;
     max-width: 1220px;
-    border-bottom: solid rgba(35, 42, 59, 0.06) 2px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
     margin: 0 auto; }
+    .header .section .nav ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .logo {
   margin: 0 0 0 0; }

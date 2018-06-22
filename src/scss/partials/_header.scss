@@ -1,11 +1,17 @@
 .header {
   background: white;
+  border-bottom: solid rgba(35,42,59,0.06) 2px;
   .section {
+    height: 92px;
     max-width: 1220px;
-    border-bottom: solid rgba(35,42,59,0.06) 2px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+    .nav ul {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 .logo {
