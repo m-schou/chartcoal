@@ -434,8 +434,8 @@ textarea {
   .main .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-gap: 20px; }
     .main .grid-container .card {
       border-radius: 6px;
@@ -458,8 +458,6 @@ textarea {
           justify-content: center; }
       .main .grid-container .summary .reports {
         padding: 10px;
-        width: 100px;
-        height: 110px;
         margin: 15px;
         border-radius: 6px;
         background: #2D55B3;
@@ -474,46 +472,141 @@ textarea {
         .main .grid-container .summary .reports h1, .main .grid-container .summary .reports h2, .main .grid-container .summary .reports h3 {
           margin: 0; }
       .main .grid-container .summary .text {
-        width: 400px;
         margin: 15px; }
         .main .grid-container .summary .text h2, .main .grid-container .summary .text h3 {
+          margin: 0; }
+    .main .grid-container .pole-chart {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .main .grid-container .pole-chart .chart1 {
+        padding: 10px;
+        margin: 15px;
+        border-radius: 6px;
+        background: #2D55B3;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+      .main .grid-container .pole-chart .text {
+        margin: 15px; }
+        .main .grid-container .pole-chart .text h2, .main .grid-container .pole-chart .text h3 {
+          margin: 0; }
+    .main .grid-container .curve-chart {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .main .grid-container .curve-chart .chart2 {
+        padding: 10px;
+        margin: 15px;
+        border-radius: 6px;
+        background: #2D55B3;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+      .main .grid-container .curve-chart .text {
+        margin: 15px; }
+        .main .grid-container .curve-chart .text h2, .main .grid-container .curve-chart .text h3 {
           margin: 0; }
   .main .item1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 1; }
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2; }
   .main .item2 {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 2; }
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 9;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 6; }
   .main .item3 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 1;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2; }
+    -ms-grid-column: 9;
+        grid-column-start: 9;
+    grid-column-end: 12;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 4; }
   .main .item4 {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 2;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2; }
-  .main .item5 {
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 2;
     -ms-grid-row: 3;
         grid-row-start: 3;
-    grid-row-end: 3; }
+    grid-row-end: 4; }
+  .main .item5 {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 6; }
   .main .item6 {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 2;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2; }
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 11; }
+  .main .item7 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 11;
+        grid-row-start: 11;
+    grid-row-end: 12; }
+  .main .item8 {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 9; }
+  .main .item9 {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 9;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    grid-row-end: 12; }
+  .main .item10 {
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 12;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 10; }
+  .main .item11 {
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 12;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 12; }
+  .main .item12 {
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 12;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 12; }
 
 button {
   text-align: center; }

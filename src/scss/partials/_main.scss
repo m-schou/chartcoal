@@ -9,10 +9,10 @@
   }
 
   .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-gap: 20px;
-      //padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    //padding: 10px;
 
     .card {
       border-radius: 6px;
@@ -29,7 +29,9 @@
       background: white;
       color: #37394C;
       .reports {
-        h1, h3 {color: white;}
+        h1, h3 {
+          color: white;
+        }
       }
     }
 
@@ -38,60 +40,151 @@
       align-items: center;
       justify-content: center;
 
+
       .reports {
         padding: 10px;
-        width: 100px;
-        height: 110px;
         margin: 15px;
         border-radius: 6px;
         background: #2D55B3;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         h1, h2, h3 {
-          margin: 0;}
+          margin: 0;
+        }
       }
       .text {
-        width: 400px;
+        //width: 400px;
+
         margin: 15px;
-        h2, h3 {margin: 0;}
+        h2, h3 {
+          margin: 0;
+        }
       }
     }
+
+    .pole-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .chart1 {
+        padding: 10px;
+        margin: 15px;
+        border-radius: 6px;
+        background: #2D55B3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .text {
+        margin: 15px;
+        h2, h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    .curve-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .chart2 {
+        padding: 10px;
+        margin: 15px;
+        border-radius: 6px;
+        background: #2D55B3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .text {
+        margin: 15px;
+        h2, h3 {
+          margin: 0;
+        }
+      }
+    }
+
   }
 
   .item1 {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .item2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
   }
   .item3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
   }
   .item4 {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .item5 {
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-end: 6;
   }
   .item6 {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 11;
   }
-
+  .item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+  .item8 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  }
+  .item9 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 12;
+  }
+  .item10 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 10;
+  }
+  .item11 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 12;
+  }
+  .item12 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 12;
+  }
 
 }
