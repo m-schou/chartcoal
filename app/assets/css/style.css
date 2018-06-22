@@ -434,8 +434,8 @@ textarea {
   .main .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px; }
     .main .grid-container .card {
       border-radius: 6px;
