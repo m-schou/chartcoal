@@ -21,8 +21,7 @@ body {
   transition: all .4s .3s ease-in; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -423,7 +422,7 @@ textarea {
 
 .main {
   max-width: 1220px;
-  margin: 0 auto; }
+  margin: 0 auto 100px auto; }
   .main header {
     display: -ms-flexbox;
     display: flex;
@@ -437,6 +436,8 @@ textarea {
     height: 1220px;
     -ms-grid-columns: (1fr)[12]/(1fr)[12];
         grid-template-columns: repeat(12, 1fr)/repeat(12, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
     grid-gap: 20px; }
     .main .grid-container .card {
       border-radius: 6px;
@@ -453,10 +454,10 @@ textarea {
     .main .grid-container .summary {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      -ms-flex-align: left;
+          align-items: left;
+      -ms-flex-pack: normal;
+          justify-content: normal; }
       .main .grid-container .summary .reports {
         padding: 10px;
         margin: 15px;
@@ -525,41 +526,54 @@ textarea {
         .main .grid-container .curve-chart .text h2, .main .grid-container .curve-chart .text h3 {
           margin: 0; }
   .main .item1 {
+    overflow: scroll;
     grid-column: 1/6;
-    grid-row: 1/2; }
+    grid-row: 1/3; }
   .main .item2 {
+    overflow: scroll;
+    max-width: 100%;
     grid-column: 6/9;
-    grid-row: 1/5; }
+    grid-row: 1/6; }
   .main .item3 {
+    overflow: hidden;
     grid-column: 9/13;
-    grid-row: 1/4; }
+    grid-row: 1/5; }
   .main .item4 {
+    overflow: hidden;
     grid-column: 1/3;
-    grid-row: 2/4; }
+    grid-row: 3/5; }
   .main .item5 {
+    overflow: hidden;
     grid-column: 3/6;
-    grid-row: 2/5; }
+    grid-row: 3/6; }
   .main .item6 {
+    overflow: hidden;
     grid-column: 1/3;
-    grid-row: 4/9; }
-  .main .item7 {
-    grid-column: 1/3;
-    grid-row: 9/11; }
-  .main .item8 {
-    grid-column: 3/9;
     grid-row: 5/11; }
+  .main .item7 {
+    overflow: hidden;
+    grid-column: 1/3;
+    grid-row: 11/12; }
+  .main .item8 {
+    overflow: hidden;
+    grid-column: 3/9;
+    grid-row: 6/12; }
   .main .item9 {
+    overflow: hidden;
     grid-column: 9/13;
-    grid-row: 4/8; }
+    grid-row: 5/10; }
   .main .item10 {
-    grid-column: 12/13;
+    overflow: hidden;
+    grid-column: 3/9;
     grid-row: 12/13; }
   .main .item11 {
-    grid-column: 12/13;
+    overflow: hidden;
+    grid-column: 1/3;
     grid-row: 12/13; }
   .main .item12 {
-    grid-column: 12/13;
-    grid-row: 12/13; }
+    overflow: hidden;
+    grid-column: 9/13;
+    grid-row: 10/13; }
 
 button {
   text-align: center; }
