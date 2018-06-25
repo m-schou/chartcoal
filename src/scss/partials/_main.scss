@@ -41,24 +41,24 @@
 
     .summary {
       display: flex;
-      align-items: left;
-      justify-content: normal;
+      align-items: center;
+      justify-content: space-between;
 
       .reports {
         padding: 10px;
         margin: 15px;
+        height: 120px;
+        width: 120px;
         border-radius: 6px;
         background: #2D55B3;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         h1, h2, h3 {
           margin: 0;
         }
       }
       .text {
-        //width: 400px;
 
         margin: 15px;
         h2, h3 {
