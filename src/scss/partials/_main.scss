@@ -10,7 +10,7 @@
 
   .grid-container {
     display: grid;
-    height: 1220px;
+    height: 1020px;
     grid-template-columns: repeat(12, 1fr) / repeat(12, 1fr);;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -26,7 +26,7 @@
     }
 
     .card-theme-blue {
-      background-image: linear-gradient(90deg, #497FFF 0%, #4BB0FF 100%);
+      background-image: linear-gradient(33deg, #4BB0FF 0%, #497FFF 100%);
       color: white;
     }
 
@@ -44,23 +44,56 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+
+      .gradient-effect {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255,255,255,0) 100%);
+        opacity: 0.2;
+        width: 150px;
+        height: 115px;
+        transform: rotate(-10deg);
+        position: absolute;
+        left: -20px;
+        top: -30px;
+        z-index: 0;
+
+        &.pos1 {
+        position: absolute;
+        left: -20px;
+        top: -30px;
+        }
+
+        &.pos2 {
+          position: absolute;
+          left: 171px;
+          top: -20px;
+        }
+
+        &.pos3 {
+          position: absolute;
+          left: 350px;
+          top: -15px;
+        }
+
+      }
 
       .reports {
         padding: 10px;
         margin: 15px;
-        height: 120px;
-        width: 120px;
+        height: 110px;
+        min-width: 100px;
         border-radius: 6px;
         background: #2D55B3;
         display: flex;
         align-items: center;
         flex-direction: column;
+        z-index: 1;
         h1, h2, h3 {
           margin: 0;
         }
       }
       .text {
-
+        z-index: 1;
         margin: 15px;
         h2, h3 {
           margin: 0;
@@ -68,54 +101,34 @@
       }
     }
 
-    .pole-chart {
+
+
+
+
+    .top-sales {
       display: flex;
       align-items: center;
-      justify-content: center;
+      flex-direction: column;
 
-      .chart1 {
-        padding: 10px;
-        margin: 15px;
-        border-radius: 6px;
-        background: #2D55B3;
+      h4 {}
+      dl {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-wrap: wrap;
-      }
 
-      .text {
-        margin: 15px;
-        h2, h3 {
-          margin: 0;
-        }
+      }
+      dt {
+        width: 23%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+      dd {
+        margin-left: auto;
+        width: 46%;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
-
-    .curve-chart {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .chart2 {
-        padding: 10px;
-        margin: 15px;
-        border-radius: 6px;
-        background: #2D55B3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .text {
-        margin: 15px;
-        h2, h3 {
-          margin: 0;
-        }
-      }
-    }
-
   }
 
   .item1 {
@@ -147,36 +160,36 @@
   .item6 {
     overflow: hidden;
     grid-column: 1/3;
-    grid-row: 5/11;
+    grid-row: 5/9;
   }
   .item7 {
     overflow: hidden;
     grid-column: 1/3;
-    grid-row: 11/12;
+    grid-row: 9/10;
   }
   .item8 {
     overflow: hidden;
     grid-column: 3/9;
-    grid-row: 6/12;
+    grid-row: 6/10;
   }
   .item9 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 5/10;
+    grid-row: 5/9;
   }
   .item10 {
     overflow: hidden;
     grid-column: 3/9;
-    grid-row: 12/13;
+    grid-row: 10/11 ;
   }
   .item11 {
     overflow: hidden;
     grid-column: 1/3;
-    grid-row: 12/13;
+    grid-row: 10/11;
   }
   .item12 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 10/13;
+    grid-row: 9/11;
   }
 }
