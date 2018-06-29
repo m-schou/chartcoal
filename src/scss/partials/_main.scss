@@ -107,7 +107,14 @@
         }
       }
     }
-
+    //ITEM 2 BLOCK CHART content
+    .card-block-chart{}
+    //ITEM 3 CURVE CHART content
+    .card-curve-chart{}
+    //ITEM 4 PROGRESS LOADER content
+    .card-progress-loader{}
+    //ITEM 5 CALENDER content
+    .card-calender{}
     //ITEM 6 LIST content
     .card-list {
       display: flex;
@@ -151,7 +158,12 @@
         }
       }
     }
-
+    //ITEM 7 SUBSCRIPTION content
+    .card-subscription{}
+    //ITEM 8 LINE CHART content
+    .card-line-chart{}
+    //ITEM 9 POLE CHART content
+    .card-pole-chart {}
     //ITEM 10 UPLOADER content
     .card-uploader {
       display: flex;
@@ -175,8 +187,11 @@
         width: 100px;
       }
     }
+    //ITEM 11 FOLLOWERS content
+    .card-followers{}
+    //ITEM 12 VIDEO content
+    .card-video{}
   }
-
 
   //GRID PLACEMENT. Where each item should be placed on 12x12 grid
   .item1 {
