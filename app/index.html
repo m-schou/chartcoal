@@ -15,6 +15,7 @@
 
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script src="assets/components/modernizr/modernizr.js"></script>
+
 </head>
 <body>
 
@@ -57,85 +58,123 @@
   </header>
 
 
-    <!--<section class="card card-theme-blue summary item1">-->
-        <!--<div class="text">-->
-            <!--<h2>1 Morning Jack</h2>-->
-            <!--<h3>There are many variations </h3>-->
-        <!--</div>-->
-        <!--<div class="reports">-->
-            <!--<h1>14</h1>-->
-            <!--<h3>Reports</h3>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!---->
+  <!--<section class="card card-theme-blue summary item1">-->
+  <!--<div class="text">-->
+  <!--<h2>1 Morning Jack</h2>-->
+  <!--<h3>There are many variations </h3>-->
+  <!--</div>-->
+  <!--<div class="reports">-->
+  <!--<h1>14</h1>-->
+  <!--<h3>Reports</h3>-->
+  <!--</div>-->
+  <!--</section>-->
+  <!---->
 
   <div class="grid-container">
-    <section class="card card-theme-blue summary item1">
+
+    <section class="card card-theme-blue card-intro item1">
 
       <div class="text">
-        <h2>1 Morning Jack</h2>
+        <h2>Morning Jack (1)</h2>
         <h3>There are many variations There are many variations  There are many variations  There are many variations  There are many variations </h3>
       </div>
       <div class="reports">
         <h1>14</h1>
         <h3>Reports</h3>
       </div>
-      <div class="gradient-effect pos1"></div>
-      <div class="gradient-effect pos2"></div>
-      <div class="gradient-effect pos3"></div>
+
+      <div class="background-overlay">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
     </section>
 
     <!--2-->
-    <section class="card card-theme-white summary item2">
+    <section class="card card-theme-white item2">
       <img src="assets/img/chart1.png">
     </section>
 
-    <section class="card card-theme-white summary item3">
+    <section class="card card-theme-white item3">
       <div id="chartContainer" style="height: 300px; width: 100%;"></div>
       <h4>3_Payment</h4>
     </section>
 
-    <section class="card card-theme-blue summary item4">4-76%
+    <section class="card card-theme-blue item4">4-76%
     </section>
 
-    <section class="card card-theme-white summary item5">5-
+    <section class="card card-theme-white item5">5-
       <img src="assets/img/calender.png">
     </section>
 
-
-    <section class="card card-theme-white top-sales item6">
-      <h4>6 Top Sales</h4>
-      <dl>
-        <dt>Skins</dt><dd>150</dd>
-        <dt>T-Shirts</dt><dd>90</dd>
-        <dt>Hoodies</dt><dd>83</dd>
-        <dt>Stickers</dt><dd>64</dd>
-        <dt>Hats</dt><dd>21</dd>
-        <dt>Tank Tops</dt><dd>13</dd>
-        <dt>Mouses</dt><dd>8</dd>
-       </dl>
-
-
+<!--@TODO Fix list structure-->
+    <section class="card-nopadding card-theme-white card-list item6">
+      <div class="top-sales-list">
+        <ul>
+          <li class="title">Top Sales (6)</li>
+        </ul>
+        <ul>
+          <li class="item">Skins</li>
+          <li class="number">150</li>
+        </ul>
+        <ul>
+          <li>T-Shirts</li>
+          <li>90</li>
+        </ul>
+        <ul>
+          <li>Hoodies</li>
+          <li>83</li>
+        </ul>
+        <ul>
+          <li>Stickers</li>
+          <li>64</li>
+        </ul>
+        <ul>
+          <li>Hats</li>
+          <li>21</li>
+        </ul>
+        <ul>
+          <li>Tank Tops</li>
+          <li>13</li>
+        </ul>
+        <ul>
+          <li>Mouses</li>
+          <li>8</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="card card-theme-white summary item7"> <h4>7  Subscriptions</h4>
+    <section class="card card-theme-white item7">
+      <h4>Subscriptions (7)</h4>
+      <h3>3352</h3>
     </section>
 
-    <section class="card card-theme-white summary item8">
+    <section class="card card-theme-white item8">
       <img src="assets/img/chart4.png"><h4>8_Revnue</h4>
     </section>
 
-    <section class="card card-theme-white summary item9">9
+    <section class="card card-theme-white item9">9
       <img src="assets/img/chart3.png">
     </section>
 
-    <section class="card card-theme-white summary item10"><h4>10 Drag and drop to upload</h4>
+    <section class="card card-theme-white card-uploader item10">
+      <div class="upload-arrow">
+        <img src="assets/img/nofication.png" alt="NO" width="30" height="30" border="0">
+      </div>
+      <div class="text">
+        <h3>10 Drag and drop to upload</h3>
+        <p>Supports MP4, MOV, AVI and FLV files. Max file size is 20GB.</p>
+      </div>
+
     </section>
 
-    <section class="card card-theme-white summary item11"><h4>11  Followers</h4>
+    <section class="card card-theme-white item11">
+      <h4>Followers (11)</h4>
+      <h3>3352</h3>
     </section>
 
-    <section class="card card-theme-white summary item12"><h4>12_The Crystal Method</h4>
+    <section class="card card-theme-white item12"><h4>12_The Crystal Method</h4>
     </section>
   </div>
 
@@ -208,8 +247,6 @@
         chart.render();
 
     }
-
-
 
 </script>
 
