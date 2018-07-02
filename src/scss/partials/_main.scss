@@ -397,7 +397,12 @@
 
     }
     //ITEM 5 CALENDER content
-    .card-calender{}
+    .card-calender{
+      img {
+        width: 100%
+      }
+
+    }
     //ITEM 6 LIST content
     .card-list {
       display: flex;
@@ -455,9 +460,19 @@
       }
     }
     //ITEM 8 LINE CHART content
-    .card-line-chart{}
+    .card-line-chart{
+      img {
+        width: 100%;
+      }
+
+    }
     //ITEM 9 POLE CHART content
-    .card-pole-chart {}
+    .card-pole-chart {
+      img {
+        width: 100%;
+      }
+
+    }
     //ITEM 10 UPLOADER content
     .card-uploader {
       display: flex;

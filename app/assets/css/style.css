@@ -734,6 +734,8 @@ textarea {
           height: 120px;
           border: dashed 1px #fff3;
           border-radius: 100%; }
+  .main .card-calender img {
+    width: 100%; }
   .main .card-list {
     display: -ms-flexbox;
     display: flex;
@@ -780,6 +782,10 @@ textarea {
       font-size: 24px;
       font-weight: 400;
       margin: 0; }
+  .main .card-line-chart img {
+    width: 100%; }
+  .main .card-pole-chart img {
+    width: 100%; }
   .main .card-uploader {
     display: -ms-flexbox;
     display: flex;
