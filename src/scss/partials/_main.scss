@@ -126,27 +126,42 @@
       }
 
       .card-body {
-        left: 80px;
-        bottom: 20px;
+        left: 72px;
+        bottom: 72px;
         position: absolute;
         //margin-top: 20px;
         height: 100%;
 
           ul {
             position: absolute;
-            left: -90px;
+            left: -86px;
             bottom: -20px;
             list-style-type: none;
             li {
+              font-size: 10px;
               font-weight: 400;
-              margin: 18px 0 18px 0;
+              margin: 21px 0 21px 0;
               color: #99999990;
               &:nth-child(even) {
                 color: #99999940;
               }
             }
-
           }
+
+        .date {
+          display: flex;
+          position: absolute;
+          left: -30px;
+          bottom: -50px;
+          li {
+            font-size: 10px;
+            margin: 0 4px 0 4px;
+            width: 40px;
+            &:nth-child(even) {
+              color: #99999990;
+            }
+          }
+        }
 
         .card-chart-blocks-1 {
           position: absolute;

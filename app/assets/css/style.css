@@ -521,21 +521,34 @@ textarea {
           margin: 18px 24px 18px 24px;
           font-size: 14px; }
       .main .grid-container .card-block-chart .card-body {
-        left: 80px;
-        bottom: 20px;
+        left: 72px;
+        bottom: 72px;
         position: absolute;
         height: 100%; }
         .main .grid-container .card-block-chart .card-body ul {
           position: absolute;
-          left: -90px;
+          left: -86px;
           bottom: -20px;
           list-style-type: none; }
           .main .grid-container .card-block-chart .card-body ul li {
+            font-size: 10px;
             font-weight: 400;
-            margin: 18px 0 18px 0;
+            margin: 21px 0 21px 0;
             color: #99999990; }
             .main .grid-container .card-block-chart .card-body ul li:nth-child(even) {
               color: #99999940; }
+        .main .grid-container .card-block-chart .card-body .date {
+          display: -ms-flexbox;
+          display: flex;
+          position: absolute;
+          left: -30px;
+          bottom: -50px; }
+          .main .grid-container .card-block-chart .card-body .date li {
+            font-size: 10px;
+            margin: 0 4px 0 4px;
+            width: 40px; }
+            .main .grid-container .card-block-chart .card-body .date li:nth-child(even) {
+              color: #99999990; }
         .main .grid-container .card-block-chart .card-body .card-chart-blocks-1 {
           position: absolute;
           left: 15px;
