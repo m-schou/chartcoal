@@ -11,8 +11,8 @@
   //MAIN CONTAINER OF GRID. Change gridspacing..
   .grid-container {
     display: grid;
-    height: 1020px;
-    grid-template-columns: repeat(12, 1fr) / repeat(12, 1fr);;
+    height: 1100px;
+    grid-template-columns: repeat(13, 1fr) / repeat(13, 1fr);;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     //overflow: hidden;
@@ -55,7 +55,6 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
-
 
       // user :before & :after
       .background-overlay > div {
@@ -112,10 +111,10 @@
       }
     }
     //ITEM 2 BLOCK CHART content
-    .card-block-chart{
+    .card-block-chart {
       position: relative;
 
-      .card-header{
+      .card-header {
         display: flex;
         justify-content: space-between;
         border-bottom: solid 1px #f0f0f0;
@@ -126,29 +125,31 @@
       }
 
       .card-body {
+
+        .block-chart {
         left: 72px;
         bottom: 72px;
         position: absolute;
         //margin-top: 20px;
         height: 100%;
 
-          ul {
-            position: absolute;
-            left: -86px;
-            bottom: -20px;
-            list-style-type: none;
-            li {
-              font-size: 10px;
-              font-weight: 400;
-              margin: 21px 0 21px 0;
-              color: #99999990;
-              &:nth-child(even) {
-                color: #99999940;
-              }
+        ul {
+          position: absolute;
+          left: -86px;
+          bottom: -20px;
+          list-style-type: none;
+          li {
+            font-size: 10px;
+            font-weight: 400;
+            margin: 21px 0 21px 0;
+            color: #99999990;
+            &:nth-child(even) {
+              color: #99999940;
             }
           }
+        }
 
-        .date {
+        .card-week {
           display: flex;
           position: absolute;
           left: -30px;
@@ -280,30 +281,29 @@
           }
         }
 
-
-        .grid-wrapper-vertical > div {
-            z-index: 0;
-            position: absolute;
+        .card-grid-wrapper-vertical > div {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border: solid 1px #F0F0F0;
+          height: 320px;
+          width: 50px;
+          &:nth-child(1) {
             left: 0;
-            bottom: 0;
-            border: solid 1px #F0F0F0;
-            height: 320px;
-            width: 50px;
-            &:nth-child(1) {
-              left: 0;
-            }
-            &:nth-child(2) {
-              left: 50px;
-            }
-            &:nth-child(3) {
-              left: 100px;
-            }
-            &:nth-child(4) {
-              left: 150px;
-            }
           }
+          &:nth-child(2) {
+            left: 50px;
+          }
+          &:nth-child(3) {
+            left: 100px;
+          }
+          &:nth-child(4) {
+            left: 150px;
+          }
+        }
 
-        .grid-wrapper-horisontal > div {
+        .card-grid-wrapper-horisontal > div {
           z-index: 0;
           position: absolute;
           left: 0;
@@ -337,14 +337,15 @@
           }
         }
 
-        }
+      }
       }
     }
 
     //ITEM 3 CURVE CHART content
-    .card-curve-chart{}
+    .card-curve-chart {
+    }
     //ITEM 4 PROGRESS LOADER content
-    .card-progress-loader{
+    .card-progress-loader {
       position: relative;
       .card-header {
         display: flex;
@@ -355,8 +356,10 @@
         left: 12px;
         bottom: 12px;
       }
-      .card-goal-percent {}
-      .card-parts {}
+      .card-goal-percent {
+      }
+      .card-parts {
+      }
       .card-percent {
         font-size: 24px;
         position: absolute;
@@ -393,11 +396,12 @@
           }
         }
       }
-      .card-circles-progress {}
+      .card-circles-progress {
+      }
 
     }
     //ITEM 5 CALENDER content
-    .card-calender{
+    .card-calender {
       img {
         width: 100%
       }
@@ -447,31 +451,450 @@
       }
     }
     //ITEM 7 SUBSCRIPTION content
-    .card-subscription{
+    .card-subscription {
       padding: 16px 0 0 20px;
-      h2 {
+      h2  {
         font-size: 12px;
-        margin:0;
+        margin: 0 0 0 8px;
       }
-      p {
+      p  {
         font-size: 24px;
         font-weight: 400;
-        margin:0;
+        margin: 0 0 0 8px;
       }
     }
     //ITEM 8 LINE CHART content
-    .card-line-chart{
+    .card-line-chart {
       img {
         width: 100%;
       }
-
     }
     //ITEM 9 POLE CHART content
     .card-pole-chart {
-      img {
-        width: 100%;
-      }
 
+        position: relative;
+        .card-header {
+          display: flex;
+          justify-content: left;
+          border-bottom: solid 1px #f0f0f0;
+          h2 {
+            margin: 18px 24px 18px 24px;
+            font-size: 14px
+          }
+          .active {
+            border-bottom: 2px solid grey;
+            padding-bottom: 22px;
+          }
+          .inactive {
+            color: lightgrey;
+          }
+
+        }
+        .card-body {
+          left: 90px;
+          bottom: 65px;
+          position: absolute;
+          //margin-top: 20px;
+          height: 100%;
+          ul {
+            position: absolute;
+            left: -86px;
+            bottom: -44px;
+            list-style-type: none;
+            li {
+              font-size: 14px;
+              font-weight: 400;
+              margin: 20px 0 20px 0;
+              color: #99999990;
+              &:nth-child(even) {
+                color: #99999940;
+              }
+            }
+          }
+
+          .card-week {
+            display: flex;
+            position: absolute;
+            left: -58px;
+            bottom: -50px;
+            li {
+              font-size: 12px;
+              margin: 0 16px 0 16px;
+              width: 40px;
+              &:nth-child(even) {
+                color: #99999990;
+              }
+            }
+          }
+
+          .card-chart-blocks-1 {
+            position: absolute;
+            left: 2px;
+            bottom: 16px;
+            width: 8px;
+            height: 6%;
+            background-color: #ff4256;
+            z-index: 1;
+
+          }
+          .card-chart-blocks-2 {
+            position: absolute;
+            left: 20px;
+            bottom: 38px;
+            width: 8px;
+            height: 3%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-3 {
+            position: absolute;
+            left: 40px;
+            bottom: 38px;
+            width: 8px;
+            height: 35%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-4 {
+            position: absolute;
+            left: 60px;
+            bottom: 38px;
+            width: 8px;
+            height: 32%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-5 {
+            position: absolute;
+            left: 80px;
+            bottom: 38px;
+            width: 8px;
+            height: 28%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-6 {
+            position: absolute;
+            left: 100px;
+            bottom: 38px;
+            width: 8px;
+            height: 36%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-7 {
+            position: absolute;
+            left: 120px;
+            bottom: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #ff4256;
+            z-index: 1;
+          }
+          .card-chart-blocks-8 {
+            position: absolute;
+            left: 140px;
+            bottom: 38px;
+            width: 8px;
+            height: 36%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-9 {
+            position: absolute;
+            left: 160px;
+            bottom: 38px;
+            width: 8px;
+            height: 23%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-10 {
+            position: absolute;
+            left: 180px;
+            bottom: 38px;
+            width: 8px;
+            height: 33%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-11 {
+            position: absolute;
+            left: 200px;
+            bottom: 38px;
+            width: 8px;
+            height: 29%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+          .card-chart-blocks-12 {
+            position: absolute;
+            left: 220px;
+            bottom: 38px;
+            width: 8px;
+            height: 18%;
+            background-color: #497FFF;
+            z-index: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 10%;
+              background-color: #BACEFF;
+              z-index: 3;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 8px;
+              height: 30%;
+              background-color: #7EA2FF;
+              z-index: 2;
+            }
+          }
+
+          .grid-wrapper-vertical > div {
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border: solid 1px #F0F0F0;
+            height: 160px;
+            width: 50px;
+            &:nth-child(1) {
+              left: 0;
+            }
+            &:nth-child(2) {
+              left: 50px;
+            }
+            &:nth-child(3) {
+              left: 100px;
+            }
+            &:nth-child(4) {
+              left: 150px;
+            }
+          }
+
+          .grid-wrapper-horisontal > div {
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-top: solid 1px #F0F0F0;
+            height: 40px;
+            width: 230px;
+            &:nth-child(1) {
+              bottom: 0;
+            }
+            &:nth-child(2) {
+              bottom: 40px;
+            }
+            &:nth-child(3) {
+              bottom: 80px;
+            }
+            &:nth-child(4) {
+              bottom: 120px;
+            }
+            &:nth-child(5) {
+              bottom: 160px;
+            }
+            &:nth-child(6) {
+              bottom: 200px;
+            }
+            &:nth-child(7) {
+              bottom: 240px;
+            }
+            &:nth-child(8) {
+              bottom: 280px;
+            }
+          }
+
+
+        }
     }
     //ITEM 10 UPLOADER content
     .card-uploader {
@@ -485,30 +908,33 @@
           margin: 6px 0 0 0;
         }
         p {
-          margin: 2px 0 0 0 ;
+          margin: 2px 0 0 0;
         }
       }
       .upload-arrow {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: dashed 1px #b9bcc2;
+        border: dashed 2px #e6e6e6;
+        border-radius: 4px;
         width: 100px;
         margin: 0 4px 0 10px;
       }
     }
     //ITEM 11 FOLLOWERS content
-    .card-followers{}
+    .card-followers {
+
+    }
     //ITEM 12 VIDEO content
-    .card-video{
+    .card-video {
       img {
         width: 100%;
-        height: 60%;
+        height: 70%;
       }
       h2 {
         font-size: 12px;
         font-weight: 700;
-        margin: 12px 20px 0 20px;
+        margin: 14px 20px 8px 20px;
       }
       p {
         margin: 0;
@@ -519,6 +945,7 @@
         margin: 2px 20px 0 20px;
       }
     }
+  }
 
 
 
@@ -584,6 +1011,6 @@
   .item12 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 9/11;
+    grid-row: 9/12;
   }
 }

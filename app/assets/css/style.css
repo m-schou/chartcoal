@@ -437,9 +437,9 @@ textarea {
   .main .grid-container {
     display: -ms-grid;
     display: grid;
-    height: 1020px;
-    -ms-grid-columns: (1fr)[12]/(1fr)[12];
-        grid-template-columns: repeat(12, 1fr)/repeat(12, 1fr);
+    height: 1100px;
+    -ms-grid-columns: (1fr)[13]/(1fr)[13];
+        grid-template-columns: repeat(13, 1fr)/repeat(13, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-gap: 20px; }
@@ -520,36 +520,36 @@ textarea {
         .main .grid-container .card-block-chart .card-header h2 {
           margin: 18px 24px 18px 24px;
           font-size: 14px; }
-      .main .grid-container .card-block-chart .card-body {
+      .main .grid-container .card-block-chart .card-body .block-chart {
         left: 72px;
         bottom: 72px;
         position: absolute;
         height: 100%; }
-        .main .grid-container .card-block-chart .card-body ul {
+        .main .grid-container .card-block-chart .card-body .block-chart ul {
           position: absolute;
           left: -86px;
           bottom: -20px;
           list-style-type: none; }
-          .main .grid-container .card-block-chart .card-body ul li {
+          .main .grid-container .card-block-chart .card-body .block-chart ul li {
             font-size: 10px;
             font-weight: 400;
             margin: 21px 0 21px 0;
             color: #99999990; }
-            .main .grid-container .card-block-chart .card-body ul li:nth-child(even) {
+            .main .grid-container .card-block-chart .card-body .block-chart ul li:nth-child(even) {
               color: #99999940; }
-        .main .grid-container .card-block-chart .card-body .date {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-week {
           display: -ms-flexbox;
           display: flex;
           position: absolute;
           left: -30px;
           bottom: -50px; }
-          .main .grid-container .card-block-chart .card-body .date li {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-week li {
             font-size: 10px;
             margin: 0 4px 0 4px;
             width: 40px; }
-            .main .grid-container .card-block-chart .card-body .date li:nth-child(even) {
+            .main .grid-container .card-block-chart .card-body .block-chart .card-week li:nth-child(even) {
               color: #99999990; }
-        .main .grid-container .card-block-chart .card-body .card-chart-blocks-1 {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1 {
           position: absolute;
           left: 15px;
           bottom: 0;
@@ -557,7 +557,7 @@ textarea {
           height: 45%;
           background-color: #497FFF;
           z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-1:before {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1:before {
             content: "";
             position: absolute;
             left: 0;
@@ -566,7 +566,7 @@ textarea {
             height: 10%;
             background-color: #BACEFF;
             z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-1:after {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1:after {
             content: "";
             position: absolute;
             left: 0;
@@ -575,7 +575,7 @@ textarea {
             height: 30%;
             background-color: #7EA2FF;
             z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .card-chart-blocks-2 {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2 {
           position: absolute;
           left: 65px;
           bottom: 0;
@@ -583,7 +583,7 @@ textarea {
           height: 50%;
           background-color: #497FFF;
           z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-2:before {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2:before {
             content: "";
             position: absolute;
             left: 0;
@@ -592,7 +592,7 @@ textarea {
             height: 10%;
             background-color: #BACEFF;
             z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-2:after {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2:after {
             content: "";
             position: absolute;
             left: 0;
@@ -601,7 +601,7 @@ textarea {
             height: 30%;
             background-color: #7EA2FF;
             z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .card-chart-blocks-3 {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3 {
           position: absolute;
           left: 115px;
           bottom: 0;
@@ -609,7 +609,7 @@ textarea {
           height: 60%;
           background-color: #497FFF;
           z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-3:before {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3:before {
             content: "";
             position: absolute;
             left: 0;
@@ -618,7 +618,7 @@ textarea {
             height: 10%;
             background-color: #BACEFF;
             z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-3:after {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3:after {
             content: "";
             position: absolute;
             left: 0;
@@ -627,7 +627,7 @@ textarea {
             height: 30%;
             background-color: #7EA2FF;
             z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .card-chart-blocks-4 {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4 {
           position: absolute;
           left: 165px;
           bottom: 0;
@@ -635,7 +635,7 @@ textarea {
           height: 55%;
           background-color: #497FFF;
           z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-4:before {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4:before {
             content: "";
             position: absolute;
             left: 0;
@@ -644,7 +644,7 @@ textarea {
             height: 10%;
             background-color: #BACEFF;
             z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .card-chart-blocks-4:after {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4:after {
             content: "";
             position: absolute;
             left: 0;
@@ -653,7 +653,7 @@ textarea {
             height: 30%;
             background-color: #7EA2FF;
             z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .grid-wrapper-vertical > div {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div {
           z-index: 0;
           position: absolute;
           left: 0;
@@ -661,15 +661,15 @@ textarea {
           border: solid 1px #F0F0F0;
           height: 320px;
           width: 50px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-vertical > div:nth-child(1) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(1) {
             left: 0; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-vertical > div:nth-child(2) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(2) {
             left: 50px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-vertical > div:nth-child(3) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(3) {
             left: 100px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-vertical > div:nth-child(4) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(4) {
             left: 150px; }
-        .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div {
+        .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div {
           z-index: 0;
           position: absolute;
           left: 0;
@@ -677,155 +677,515 @@ textarea {
           border: solid 1px #F0F0F0;
           height: 40px;
           width: 200px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(1) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(1) {
             bottom: 0; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(2) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(2) {
             bottom: 40px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(3) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(3) {
             bottom: 80px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(4) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(4) {
             bottom: 120px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(5) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(5) {
             bottom: 160px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(6) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(6) {
             bottom: 200px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(7) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(7) {
             bottom: 240px; }
-          .main .grid-container .card-block-chart .card-body .grid-wrapper-horisontal > div:nth-child(8) {
+          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(8) {
             bottom: 280px; }
-  .main .card-progress-loader {
-    position: relative; }
-    .main .card-progress-loader .card-header {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-    .main .card-progress-loader a {
-      position: absolute;
-      left: 12px;
-      bottom: 12px; }
-    .main .card-progress-loader .card-percent {
-      font-size: 24px;
-      position: absolute;
-      left: 41%;
-      top: 41%; }
-    .main .card-progress-loader .card-circles-dashed {
-      position: relative;
-      width: 100%; }
-      .main .card-progress-loader .card-circles-dashed div {
-        width: 80px;
-        height: 80px;
-        border: dashed 1px #fff3;
-        border-radius: 100%;
-        position: absolute;
-        left: 0;
-        top: 0; }
-        .main .card-progress-loader .card-circles-dashed div:before {
-          content: "";
-          position: absolute;
-          width: 100px;
-          height: 100px;
-          border: dashed 1px #fff3;
-          border-radius: 100%; }
-        .main .card-progress-loader .card-circles-dashed div:after {
-          content: "";
-          position: absolute;
-          width: 120px;
-          height: 120px;
-          border: dashed 1px #fff3;
-          border-radius: 100%; }
-  .main .card-calender img {
-    width: 100%; }
-  .main .card-list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    font-family: Open Sans, sans-serif;
-    font-size: 14px;
-    font-weight: 600; }
-    .main .card-list .top-sales-list {
-      width: 100%; }
-      .main .card-list .top-sales-list .title {
-        font-family: Montserrat, sans-serif;
-        font-weight: 600;
-        margin-top: 6px;
-        color: #37394C; }
-      .main .card-list .top-sales-list ul {
+    .main .grid-container .card-progress-loader {
+      position: relative; }
+      .main .grid-container .card-progress-loader .card-header {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-        list-style-type: none;
-        border-bottom: 1px solid #F0F0F0;
-        padding: 12px 16px;
-        margin: 0; }
-        .main .card-list .top-sales-list ul:last-child {
-          border-bottom: none; }
-        .main .card-list .top-sales-list ul li {
-          margin-left: 10px;
-          color: #232A3B;
-          font-weight: 400;
-          font-size: 14px; }
-        .main .card-list .top-sales-list ul li:nth-child(even) {
-          color: #909399;
-          font-size: 13px;
-          margin-right: 10px; }
-  .main .card-subscription {
-    padding: 16px 0 0 20px; }
-    .main .card-subscription h2  {
-      font-size: 12px;
-      margin: 0; }
-    .main .card-subscription p  {
-      font-size: 24px;
-      font-weight: 400;
-      margin: 0; }
-  .main .card-line-chart img {
-    width: 100%; }
-  .main .card-pole-chart img {
-    width: 100%; }
-  .main .card-uploader {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: left;
-        justify-content: left; }
-    .main .card-uploader .text {
+            justify-content: space-between; }
+      .main .grid-container .card-progress-loader a {
+        position: absolute;
+        left: 12px;
+        bottom: 12px; }
+      .main .grid-container .card-progress-loader .card-percent {
+        font-size: 24px;
+        position: absolute;
+        left: 41%;
+        top: 41%; }
+      .main .grid-container .card-progress-loader .card-circles-dashed {
+        position: relative;
+        width: 100%; }
+        .main .grid-container .card-progress-loader .card-circles-dashed div {
+          width: 80px;
+          height: 80px;
+          border: dashed 1px #fff3;
+          border-radius: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; }
+          .main .grid-container .card-progress-loader .card-circles-dashed div:before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: dashed 1px #fff3;
+            border-radius: 100%; }
+          .main .grid-container .card-progress-loader .card-circles-dashed div:after {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: dashed 1px #fff3;
+            border-radius: 100%; }
+    .main .grid-container .card-calender img {
+      width: 100%; }
+    .main .grid-container .card-list {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      margin-left: 24px; }
-      .main .card-uploader .text h3 {
-        margin: 6px 0 0 0; }
-      .main .card-uploader .text p {
-        margin: 2px 0 0 0; }
-    .main .card-uploader .upload-arrow {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      border: dashed 1px #b9bcc2;
-      width: 100px;
-      margin: 0 4px 0 10px; }
-  .main .card-video img {
-    width: 100%;
-    height: 60%; }
-  .main .card-video h2 {
-    font-size: 12px;
-    font-weight: 700;
-    margin: 12px 20px 0 20px; }
-  .main .card-video p {
-    margin: 0; }
-  .main .card-video .footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin: 2px 20px 0 20px; }
+      -ms-flex-direction: column;
+          flex-direction: column;
+      font-family: Open Sans, sans-serif;
+      font-size: 14px;
+      font-weight: 600; }
+      .main .grid-container .card-list .top-sales-list {
+        width: 100%; }
+        .main .grid-container .card-list .top-sales-list .title {
+          font-family: Montserrat, sans-serif;
+          font-weight: 600;
+          margin-top: 6px;
+          color: #37394C; }
+        .main .grid-container .card-list .top-sales-list ul {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          list-style-type: none;
+          border-bottom: 1px solid #F0F0F0;
+          padding: 12px 16px;
+          margin: 0; }
+          .main .grid-container .card-list .top-sales-list ul:last-child {
+            border-bottom: none; }
+          .main .grid-container .card-list .top-sales-list ul li {
+            margin-left: 10px;
+            color: #232A3B;
+            font-weight: 400;
+            font-size: 14px; }
+          .main .grid-container .card-list .top-sales-list ul li:nth-child(even) {
+            color: #909399;
+            font-size: 13px;
+            margin-right: 10px; }
+    .main .grid-container .card-subscription {
+      padding: 16px 0 0 20px; }
+      .main .grid-container .card-subscription h2  {
+        font-size: 12px;
+        margin: 0 0 0 8px; }
+      .main .grid-container .card-subscription p  {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 0 0 8px; }
+    .main .grid-container .card-line-chart img {
+      width: 100%; }
+    .main .grid-container .card-pole-chart {
+      position: relative; }
+      .main .grid-container .card-pole-chart .card-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: left;
+            justify-content: left;
+        border-bottom: solid 1px #f0f0f0; }
+        .main .grid-container .card-pole-chart .card-header h2 {
+          margin: 18px 24px 18px 24px;
+          font-size: 14px; }
+        .main .grid-container .card-pole-chart .card-header .active {
+          border-bottom: 2px solid grey;
+          padding-bottom: 22px; }
+        .main .grid-container .card-pole-chart .card-header .inactive {
+          color: lightgrey; }
+      .main .grid-container .card-pole-chart .card-body {
+        left: 90px;
+        bottom: 65px;
+        position: absolute;
+        height: 100%; }
+        .main .grid-container .card-pole-chart .card-body ul {
+          position: absolute;
+          left: -86px;
+          bottom: -44px;
+          list-style-type: none; }
+          .main .grid-container .card-pole-chart .card-body ul li {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 20px 0 20px 0;
+            color: #99999990; }
+            .main .grid-container .card-pole-chart .card-body ul li:nth-child(even) {
+              color: #99999940; }
+        .main .grid-container .card-pole-chart .card-body .card-week {
+          display: -ms-flexbox;
+          display: flex;
+          position: absolute;
+          left: -58px;
+          bottom: -50px; }
+          .main .grid-container .card-pole-chart .card-body .card-week li {
+            font-size: 12px;
+            margin: 0 16px 0 16px;
+            width: 40px; }
+            .main .grid-container .card-pole-chart .card-body .card-week li:nth-child(even) {
+              color: #99999990; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-1 {
+          position: absolute;
+          left: 2px;
+          bottom: 16px;
+          width: 8px;
+          height: 6%;
+          background-color: #ff4256;
+          z-index: 1; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-2 {
+          position: absolute;
+          left: 20px;
+          bottom: 38px;
+          width: 8px;
+          height: 3%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-2:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-2:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-3 {
+          position: absolute;
+          left: 40px;
+          bottom: 38px;
+          width: 8px;
+          height: 35%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-3:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-3:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-4 {
+          position: absolute;
+          left: 60px;
+          bottom: 38px;
+          width: 8px;
+          height: 32%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-4:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-4:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-5 {
+          position: absolute;
+          left: 80px;
+          bottom: 38px;
+          width: 8px;
+          height: 28%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-5:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-5:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-6 {
+          position: absolute;
+          left: 100px;
+          bottom: 38px;
+          width: 8px;
+          height: 36%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-6:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-6:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-7 {
+          position: absolute;
+          left: 120px;
+          bottom: 0;
+          width: 8px;
+          height: 10%;
+          background-color: #ff4256;
+          z-index: 1; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-8 {
+          position: absolute;
+          left: 140px;
+          bottom: 38px;
+          width: 8px;
+          height: 36%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-8:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-8:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-9 {
+          position: absolute;
+          left: 160px;
+          bottom: 38px;
+          width: 8px;
+          height: 23%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-9:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-9:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-10 {
+          position: absolute;
+          left: 180px;
+          bottom: 38px;
+          width: 8px;
+          height: 33%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-10:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-10:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-11 {
+          position: absolute;
+          left: 200px;
+          bottom: 38px;
+          width: 8px;
+          height: 29%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-11:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-11:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .card-chart-blocks-12 {
+          position: absolute;
+          left: 220px;
+          bottom: 38px;
+          width: 8px;
+          height: 18%;
+          background-color: #497FFF;
+          z-index: 1; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-12:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3; }
+          .main .grid-container .card-pole-chart .card-body .card-chart-blocks-12:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2; }
+        .main .grid-container .card-pole-chart .card-body .grid-wrapper-vertical > div {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border: solid 1px #F0F0F0;
+          height: 160px;
+          width: 50px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-vertical > div:nth-child(1) {
+            left: 0; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-vertical > div:nth-child(2) {
+            left: 50px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-vertical > div:nth-child(3) {
+            left: 100px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-vertical > div:nth-child(4) {
+            left: 150px; }
+        .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-top: solid 1px #F0F0F0;
+          height: 40px;
+          width: 230px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(1) {
+            bottom: 0; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(2) {
+            bottom: 40px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(3) {
+            bottom: 80px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(4) {
+            bottom: 120px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(5) {
+            bottom: 160px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(6) {
+            bottom: 200px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(7) {
+            bottom: 240px; }
+          .main .grid-container .card-pole-chart .card-body .grid-wrapper-horisontal > div:nth-child(8) {
+            bottom: 280px; }
+    .main .grid-container .card-uploader {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: left;
+          justify-content: left; }
+      .main .grid-container .card-uploader .text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        margin-left: 24px; }
+        .main .grid-container .card-uploader .text h3 {
+          margin: 6px 0 0 0; }
+        .main .grid-container .card-uploader .text p {
+          margin: 2px 0 0 0; }
+      .main .grid-container .card-uploader .upload-arrow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        border: dashed 2px #e6e6e6;
+        border-radius: 4px;
+        width: 100px;
+        margin: 0 4px 0 10px; }
+    .main .grid-container .card-video img {
+      width: 100%;
+      height: 70%; }
+    .main .grid-container .card-video h2 {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 14px 20px 8px 20px; }
+    .main .grid-container .card-video p {
+      margin: 0; }
+    .main .grid-container .card-video .footer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      margin: 2px 20px 0 20px; }
   .main .item1 {
     overflow: scroll;
     grid-column: 1/6;
@@ -875,7 +1235,7 @@ textarea {
   .main .item12 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 9/11; }
+    grid-row: 9/12; }
 
 button {
   text-align: center; }
