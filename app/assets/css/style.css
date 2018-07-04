@@ -704,6 +704,13 @@ textarea {
         position: absolute;
         left: 12px;
         bottom: 12px; }
+      .main .grid-container .card-progress-loader .card-goal-percent {
+        font-weight: 300; }
+      .main .grid-container .card-progress-loader .card-parts {
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7); }
+        .main .grid-container .card-progress-loader .card-parts strong {
+          color: white; }
       .main .grid-container .card-progress-loader .card-percent {
         font-size: 24px;
         position: absolute;
@@ -711,29 +718,60 @@ textarea {
         top: 41%; }
       .main .grid-container .card-progress-loader .card-circles-dashed {
         position: relative;
-        width: 100%; }
-        .main .grid-container .card-progress-loader .card-circles-dashed div {
+        width: 100%;
+        height: 100%; }
+        .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-inner {
           width: 80px;
           height: 80px;
           border: dashed 1px #fff3;
           border-radius: 100%;
           position: absolute;
-          left: 0;
-          top: 0; }
-          .main .grid-container .card-progress-loader .card-circles-dashed div:before {
+          left: 28%;
+          top: 12%; }
+          .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-inner:before {
             content: "";
             position: absolute;
             width: 100px;
             height: 100px;
             border: dashed 1px #fff3;
-            border-radius: 100%; }
-          .main .grid-container .card-progress-loader .card-circles-dashed div:after {
+            border-radius: 100%;
+            left: -15%;
+            top: -15%; }
+          .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-inner:after {
             content: "";
             position: absolute;
-            width: 120px;
-            height: 120px;
+            width: 124px;
+            height: 124px;
             border: dashed 1px #fff3;
-            border-radius: 100%; }
+            border-radius: 100%;
+            left: -29%;
+            top: -29%; }
+        .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-outer {
+          width: 148px;
+          height: 148px;
+          border: dashed 1px #fff3;
+          border-radius: 100%;
+          position: absolute;
+          left: 7%;
+          top: -9%; }
+          .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-outer:before {
+            content: "";
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border: dashed 1px #fff3;
+            border-radius: 100%;
+            left: -8%;
+            top: -8%; }
+          .main .grid-container .card-progress-loader .card-circles-dashed .triple-ring-outer:after {
+            content: "";
+            position: absolute;
+            width: 184px;
+            height: 184px;
+            border: dashed 1px #fff3;
+            border-radius: 100%;
+            left: -14%;
+            top: -14%; }
     .main .grid-container .card-calender img {
       width: 100%; }
     .main .grid-container .card-list {
@@ -793,11 +831,11 @@ textarea {
             justify-content: left;
         border-bottom: solid 1px #f0f0f0; }
         .main .grid-container .card-pole-chart .card-header h2 {
-          margin: 18px 24px 18px 24px;
+          margin: 16px 24px 0 24px;
           font-size: 14px; }
         .main .grid-container .card-pole-chart .card-header .active {
-          border-bottom: 2px solid grey;
-          padding-bottom: 22px; }
+          border-bottom: 2px solid #3B75FF;
+          padding: 0 12px 14px 12px; }
         .main .grid-container .card-pole-chart .card-header .inactive {
           color: lightgrey; }
       .main .grid-container .card-pole-chart .card-body {
@@ -1257,13 +1295,13 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-style: bold;
   height: 36px;
-  text-transform: uppercase;
   padding: 0 20px;
   border-radius: 36px;
+  border-color: #999696;
   font-size: 11px;
   background: none; }
   .open-reports a {
-    color: dimgrey; }
+    color: #37394C; }
 
 @font-face {
   font-family: 'Font-Name';
