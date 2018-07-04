@@ -14,7 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
   <script src="assets/components/modernizr/modernizr.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -149,8 +153,11 @@
       </div>
       <div class="card-percent">76%</div>
       <div class="card-circles-dashed">
+        <div class="loading-circle"></div>
+        <div class="loading-circle-dot"></div>
         <div class="triple-ring-inner"></div>
-        <div class="triple-ring-outer"></div>
+
+        <!--<div class="triple-ring-outer"></div>-->
         <!--<div></div>-->
       </div>
       <div class="card-circles-progress"></div>
@@ -205,10 +212,25 @@
     <section class="card card-theme-white card-subscription item7">
       <h2>Subscriptions (7)</h2>
       <p>3352</p>
+      <img src="assets/img/mini-chart-14.png" alt="NO" width="40" height="20" border="0">
     </section>
 
     <section class="card card-theme-white card-line-chart item8">
-      <img src="assets/img/chart4.png"><h4></h4>
+      <!--<img src="assets/img/chart4.png"><h4></h4>-->
+
+      <div class="header">
+      <h2>Revenue</h2>
+      <img src="assets/img/Icon.png" alt="NO" width="20" height="20" border="0">
+      </div>
+      <div class="highlight">
+        <p>Current Week</p><p>Previous Week</p>
+        <h5>$ 72 124</h5><h5>$ 55 908</h5>
+      </div>
+      <div height="500">
+        <canvas class="chartjs" id="lineChart"></canvas>
+      </div>
+
+
     </section>
 
     <section class="card-nopadding card-theme-white card-pole-chart item9">
@@ -283,6 +305,7 @@
     <section class="card card-theme-white card-subscription item11">
       <h2>Followers (11)</h2>
       <p>3352</p>
+      <img src="assets/img/mini-chart-14.png" alt="NO" width="40" height="20" border="0">
     </section>
 
     <section class="card-nopadding card-theme-white card-video item12">
