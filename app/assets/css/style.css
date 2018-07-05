@@ -830,6 +830,8 @@ textarea {
         position: absolute;
         right: 50px;
         bottom: 16px; }
+    .main .grid-container .card-line-chart img {
+      margin: 16px 16px 16px 16px; }
     .main .grid-container .card-line-chart .header {
       display: -ms-flexbox;
       display: flex;
@@ -837,16 +839,37 @@ textarea {
           justify-content: space-between;
       margin-bottom: 10px; }
       .main .grid-container .card-line-chart .header h2 {
-        font-size: 14px; }
-    .main .grid-container .card-line-chart .highlight {
+        font-size: 14px;
+        margin: 16px 8px 16px 16px; }
+    .main .grid-container .card-line-chart .summary-week-value {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: left;
-          justify-content: left; }
-      .main .grid-container .card-line-chart .highlight h5 {
-        margin: 0; }
-      .main .grid-container .card-line-chart .highlight p {
-        margin: 0; }
+          justify-content: left;
+      margin-top: 30px;
+      margin-bottom: -30px; }
+      .main .grid-container .card-line-chart .summary-week-value .current-week-value {
+        margin-left: 16px; }
+        .main .grid-container .card-line-chart .summary-week-value .current-week-value h5 {
+          font-size: 24px;
+          margin: 0;
+          font-weight: 200;
+          color: #4b9fff; }
+        .main .grid-container .card-line-chart .summary-week-value .current-week-value p {
+          font-size: 10px;
+          margin: 0;
+          font-weight: 600; }
+      .main .grid-container .card-line-chart .summary-week-value .past-week-value {
+        margin-left: 32px; }
+        .main .grid-container .card-line-chart .summary-week-value .past-week-value h5 {
+          font-size: 24px;
+          font-weight: 200;
+          margin: 0;
+          color: #b9b8bd; }
+        .main .grid-container .card-line-chart .summary-week-value .past-week-value p {
+          margin: 0;
+          font-size: 10px;
+          font-weight: 600; }
     .main .grid-container .card-pole-chart {
       position: relative; }
       .main .grid-container .card-pole-chart .card-header {

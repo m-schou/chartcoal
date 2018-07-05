@@ -215,19 +215,31 @@
       <img src="assets/img/mini-chart-14.png" alt="NO" width="40" height="20" border="0">
     </section>
 
-    <section class="card card-theme-white card-line-chart item8">
+    <section class="card-nopadding card-theme-white card-line-chart item8">
       <!--<img src="assets/img/chart4.png"><h4></h4>-->
 
       <div class="header">
       <h2>Revenue</h2>
-      <img src="assets/img/Icon.png" alt="NO" width="20" height="20" border="0">
+      <img src="assets/img/Icon.png" alt="NO" width="15" height="15" border="0">
       </div>
-      <div class="highlight">
-        <p>Current Week</p><p>Previous Week</p>
-        <h5>$ 72 124</h5><h5>$ 55 908</h5>
+      <div class="summary-week-value">
+        <div class="current-week-value">
+          <p>Current Week</p>
+          <h5>$ 72 124</h5>
+        </div>
+        <div class="past-week-value">
+          <p>Previous Week</p>
+          <h5>$ 55 908</h5>
+        </div>
       </div>
-      <div height="500">
-        <canvas class="chartjs" id="lineChart"></canvas>
+
+
+      <!--<div height="500" class="chartjs-wrapper" style="width:90%">-->
+        <!--<canvas class="chartjs" id="lineChart"></canvas>-->
+      <!--</div>-->
+
+      <div class="wrapper" style="width:70%; margin-top:50px; margin-left:20px;">
+        <canvas id="myChart"></canvas>
       </div>
 
 
