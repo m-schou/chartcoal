@@ -180,7 +180,9 @@
 
 // CHART JS -end
 
-
+function randomScalingFactor() {
+    return Math.round(Math.random() * 2 * 10000);
+}
 
 var ctx = document.getElementById('myChart').getContext("2d");
 
@@ -222,7 +224,7 @@ var myChart = new Chart(ctx, {
             pointRadius: 1,
             fill: false,
             borderWidth: 3,
-            data: [5000, 7000, 15000, 10000, 11000, 20000, 14000, 18000]
+            data: [5000, 7000, 15000, 10000, 11000, 20000, 14000, randomScalingFactor()]
         },
         {
             label: "Previous Week",
@@ -238,7 +240,7 @@ var myChart = new Chart(ctx, {
             pointRadius: 1,
             fill: false,
             borderWidth: 3,
-            data: [7000, 15000, 16000, 7000, 8000, 13000, 9000, 7000]
+            data: [randomScalingFactor(), 15000, 16000, 7000, 8000, 13000, 9000, randomScalingFactor()]
         }]
     },
     options: {
