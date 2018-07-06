@@ -347,7 +347,18 @@
     }
 
     //ITEM 3 CURVE CHART content
+
+    .card-header {
+      display: flex;
+      border-bottom: solid 1px #f0f0f0;
+      h2 {
+        margin: 18px 24px 18px 24px;
+        font-size: 14px
+      }
+    }
+
     .card-curve-chart {
+      padding: 16px;
     }
     //ITEM 4 PROGRESS LOADER content
     .card-progress-loader {
@@ -518,29 +529,23 @@
     }
     //ITEM 8 LINE CHART content
     .card-line-chart {
-
-     .chartjs-wrapper {
-      //margin: 16px 16px 16px 0;
+      position: relative;
+      .header {
+        h2 {
+          font-size: 14px;
+          margin: 22px 8px 22px 32px;
+        }
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
       }
       img {
-        margin: 16px 16px 16px 16px;
-      }
-     .header {
-       h2 {
-         font-size: 14px;
-         margin: 16px 8px 16px 16px;
-       }
-       display: flex;
-       justify-content: space-between;
-       margin-bottom: 10px;
+        margin: 22px 30px 22px 16px;
       }
 
       .summary-week-value {
         display: flex;
-        justify-content: left;
-        margin-top: 30px;
-        margin-bottom: -30px;
-
+        margin: 32px 16px;
         .current-week-value {
           margin-left: 16px;
           h5 {
@@ -570,6 +575,14 @@
           }
         }
       }
+
+     .chartjs-wrapper {
+       //top: 150px;
+       position: relative;
+       //left: 8%;
+       margin: 44px 42px 0 24px;
+       height: 200px;
+      }
     }
     //ITEM 9 POLE CHART content
     .card-pole-chart {
@@ -594,7 +607,7 @@
         }
         .card-body {
           left: 90px;
-          bottom: 90px;
+          bottom: 60px;
           position: absolute;
           //margin-top: 20px;
           height: 100%;
@@ -1102,7 +1115,7 @@
   .item9 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 5/9;
+    grid-row: 5/8;
   }
   .item10 {
     overflow: hidden;
@@ -1117,6 +1130,6 @@
   .item12 {
     overflow: hidden;
     grid-column: 9/13;
-    grid-row: 9/12;
+    grid-row: 8/11;
   }
 }

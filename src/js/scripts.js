@@ -182,7 +182,6 @@ var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
 gradientStroke.addColorStop(0, '#4f7ef6');
 gradientStroke.addColorStop(1, '#4dd5ff');
 
-
 var chartColors = {
     red: 'rgb(255, 99, 132)',
     orange: 'rgb(255, 159, 64)',
@@ -196,9 +195,6 @@ var chartColors = {
     transparent: 'rgba(231,233,37,0)'
 };
 
-
-
-
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -210,13 +206,14 @@ var myChart = new Chart(ctx, {
             pointBackgroundColor: gradientStroke,
             pointHoverBackgroundColor: gradientStroke,
             pointHoverBorderColor: gradientStroke,
-            pointBorderWidth: 6,
+            // pointBorderWidth: 6,
             pointHoverRadius: 6,
             pointHoverBorderWidth: 1,
             pointRadius: 1,
             fill: false,
             borderWidth: 3,
-            data: [5000, 7000, 15000, 10000, 11000, 20000, 14000, randomScalingFactor()]
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            // data: [randomScalingFactor(), 7000, 15000, 10000, 11000, 20000, 14000, randomScalingFactor()]
         },
         {
             label: "Previous Week",
@@ -226,45 +223,72 @@ var myChart = new Chart(ctx, {
             pointBackgroundColor: chartColors.lightgrey,
             pointHoverBackgroundColor: chartColors.lightgrey,
             pointHoverBorderColor: chartColors.lightgrey,
-            pointBorderWidth: 6,
+            // pointBorderWidth: 6,
             pointHoverRadius: 6,
             pointHoverBorderWidth: 1,
             pointRadius: 1,
             fill: false,
             borderWidth: 3,
-            data: [randomScalingFactor(), 15000, 16000, 7000, 8000, 13000, 9000, randomScalingFactor()]
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            // data: [randomScalingFactor(), 15000, 16000, 7000, 8000, 13000, 9000, randomScalingFactor()]
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         legend: {
-            position: "bottom"
+            display: false
+            // position: "bottom"
         },
         scales: {
             yAxes: [{
-                ticks: {
-                    fontColor: "rgba(0,0,0,0.3)",
-                    fontStyle: "bold",
-                    beginAtZero: true,
-                    maxTicksLimit: 5,
-                    padding: 30
-                }
-                // ,
-                // gridLines: {
-                //     drawTicks: false,
-                //     display: false
-                // }
-
-            }],
-            xAxes: [{
                 gridLines: {
                     zeroLineColor: "transparent"
                 },
                 ticks: {
+                    // responsive: true,
+                    // maintainAspectRatio: false,
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "normal",
+                    beginAtZero: true,
+                    maxTicksLimit: 5,
+                    padding: 30
+                }
+
+
+            }],
+            xAxes: [{
+                // responsive: true,
+                // maintainAspectRatio: false,
+                gridLines: {
+                    zeroLineColor: "transparent",
+                    display: false
+                },
+                ticks: {
                     padding: 30,
-                    fontColor: "rgba(0,0,0,0.3)",
-                    fontStyle: "bold"
+                    fontColor: "rgba(0,0,0,0.2)",
+                    fontStyle: "normal"
                 }
             }]
+        },
+        tooltips: {
+            // mode: 'index',
+            titleMarginBottom: 12,
+            bodySpacing: 8,
+            xPadding: 15,
+            yPadding: 15
+            // cornerRadius: 2,
+            // bodyFontStyle: "bold",
+            // backgroundColor: "#f0f0f0",
+            // borderColor: "#3a3938",
+            // borderWidth: 1
+            // titleFontColor: "#3a3938",
+            // bodyFontColor: "#3a3938",
+            // callbacks: {
+            //     label: function (tooltipItem) {
+            //         return tooltipItem.yLabel;
+            //     }
+            // }
         }
     }
 });
