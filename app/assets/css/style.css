@@ -707,9 +707,7 @@ textarea {
       .main .grid-container .card-header h2 {
         margin: 18px 24px 18px 24px;
         font-size: 14px; }
-    .main .grid-container .card-curve-chart {
-      padding: 16px; }
-    .main .grid-container .chartsContainer {
+    .main .grid-container .card-curve-chart .chartsContainer {
       display: -ms-flexbox;
       display: flex;
       width: 100%;
@@ -717,48 +715,48 @@ textarea {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-      .main .grid-container .chartsContainer .ct-grid {
+      .main .grid-container .card-curve-chart .chartsContainer .ct-grid {
         stroke-dasharray: none; }
-      .main .grid-container .chartsContainer .ct-labels {
+      .main .grid-container .card-curve-chart .chartsContainer .ct-labels {
         font-family: Montserrat;
         font-size: 10px;
         font-weight: 500; }
-      .main .grid-container .chartsContainer .ct-labels > div {
+      .main .grid-container .card-curve-chart .chartsContainer .ct-labels > div {
         padding: 20px; }
-    .main .grid-container .travelChart {
+    .main .grid-container .card-curve-chart .travelChart {
       width: 470px;
       height: 295px; }
-    .main .grid-container .ct-series-a .ct-bar {
+    .main .grid-container .card-curve-chart .ct-series-a .ct-bar {
       /* Colour of your bars */
       stroke: gold;
       /* The width of your bars */
       stroke-width: 20px;
       /* Maybe you like round corners on your bars? */ }
-    .main .grid-container .slaChart {
-      width: 385px;
+    .main .grid-container .card-curve-chart .slaChart {
+      width: 313px;
       height: 295px; }
-      .main .grid-container .slaChart .ct-series-a .ct-line {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-a .ct-line {
         stroke: #DAE6FF;
         stroke-width: 3px; }
-      .main .grid-container .slaChart .ct-series-a .ct-point {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-a .ct-point {
         stroke: #DAE6FF;
         transition: all 0.3s; }
-        .main .grid-container .slaChart .ct-series-a .ct-point:hover {
+        .main .grid-container .card-curve-chart .slaChart .ct-series-a .ct-point:hover {
           stroke-width: 15px;
           transition: all 0.3s; }
-      .main .grid-container .slaChart .ct-series-a .ct-area {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-a .ct-area {
         fill: #DAE6FF;
         fill-opacity: 1; }
-      .main .grid-container .slaChart .ct-series-b .ct-line {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-b .ct-line {
         stroke: #4A7FFF;
         stroke-width: 3px; }
-      .main .grid-container .slaChart .ct-series-b .ct-point {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-b .ct-point {
         stroke: #4A7FFF;
         transition: all 0.3s; }
-        .main .grid-container .slaChart .ct-series-b .ct-point:hover {
+        .main .grid-container .card-curve-chart .slaChart .ct-series-b .ct-point:hover {
           stroke-width: 15px;
           transition: all 0.3s; }
-      .main .grid-container .slaChart .ct-series-b .ct-area {
+      .main .grid-container .card-curve-chart .slaChart .ct-series-b .ct-area {
         fill: #4A7FFF;
         fill-opacity: 1; }
     .main .grid-container .card-progress-loader {
