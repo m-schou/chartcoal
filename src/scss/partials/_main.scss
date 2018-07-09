@@ -360,12 +360,100 @@
     .card-curve-chart {
       padding: 16px;
     }
+
+    $travelColor: #f6c61e;
+    $travelFill: #5DBCFF;
+    $slaColor: #4A7FFF;
+    $slaSubColor: #DAE6FF;
+    $speColor: #fb79f6;
+    $utilityColor: #42eb3e;
+
+    .chartsContainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .ct-grid {
+        stroke-dasharray: none;
+      }
+      .ct-labels {
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 500;
+      }
+
+      .ct-labels > div {
+        padding: 20px;
+      }
+    }
+
+    .travelChart {
+      width: 470px;
+      height: 295px;
+    }
+
+
+    .ct-series-a .ct-bar {
+      /* Colour of your bars */
+      stroke: gold;
+      /* The width of your bars */
+      stroke-width: 20px;
+      /* Maybe you like round corners on your bars? */
+      // stroke-linecap: round;
+    }
+
+    .slaChart {
+      width: 385px;
+      height: 295px;
+      .ct-series-a {
+        .ct-line {
+          stroke: $slaSubColor;
+          stroke-width: 3px;
+        }
+        .ct-point {
+          stroke: $slaSubColor;
+          transition: all 0.3s;
+          &:hover {
+            stroke-width: 15px;
+            transition: all 0.3s;
+          }
+        }
+        .ct-area {
+          fill: $slaSubColor;
+          fill-opacity: 1;
+        }
+      }
+      .ct-series-b {
+        .ct-line {
+          stroke: $slaColor;
+          stroke-width: 3px;
+        }
+        .ct-point {
+          stroke: $slaColor;
+          transition: all 0.3s;
+          &:hover {
+            stroke-width: 15px;
+            transition: all 0.3s;
+          }
+        }
+        .ct-area {
+          fill: $slaColor;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+
+
+
+
     //ITEM 4 PROGRESS LOADER content
     .card-progress-loader {
       position: relative;
       .card-header {
         display: flex;
         justify-content: space-between;
+        border: none;
       }
       a {
         position: absolute;
@@ -414,8 +502,8 @@
         }
         .loading-circle-dot {
           position: absolute;
-          left: 49px;
-          top: 87px;
+          left: 50px;
+          top: 92px;
           width: 10px;
           height: 10px;
           border-radius: 100%;

@@ -300,3 +300,35 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+
+
+
+// CHARTIST JS
+
+Chartist.plugins = Chartist.plugins || {};
+var data = {
+    labels: ['January', '', 'February', '', 'March'],
+    series: [
+        // [0, 5, 8, 10, 7, 6, 5, 5, 4],
+        [0, 50, 35, 70, 50, 100],
+        [0 , 45, 25, 55, 35, 70]
+    ]
+};
+
+var options = {
+    low: 0,
+    high: 100,
+    showArea: true,
+    plugins: [
+        // Chartist.plugins.lineSelector()
+    ],
+    axisY: {
+        onlyInteger: true,
+        offset: 20
+    },
+    axisX: { showGrid: false }
+};
+
+var lineChart = new Chartist.Line('.slaChart', data, options);
+
