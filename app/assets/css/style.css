@@ -516,190 +516,51 @@ textarea {
           margin: 0; }
         .main .grid-container .card-intro .text h3 {
           font-weight: 400; }
-    .main .grid-container .card-block-chart {
-      position: relative; }
-      .main .grid-container .card-block-chart .card-header {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        border-bottom: solid 1px #f0f0f0; }
-        .main .grid-container .card-block-chart .card-header h2 {
-          margin: 18px 24px 18px 24px;
-          font-size: 14px; }
-      .main .grid-container .card-block-chart .card-body .block-chart {
-        left: 72px;
-        bottom: 72px;
-        position: absolute;
-        height: 100%; }
-        .main .grid-container .card-block-chart .card-body .block-chart ul {
-          position: absolute;
-          left: -86px;
-          bottom: -20px;
-          list-style-type: none; }
-          .main .grid-container .card-block-chart .card-body .block-chart ul li {
-            font-size: 10px;
-            font-weight: 400;
-            margin: 21px 0 21px 0;
-            color: #99999990; }
-            .main .grid-container .card-block-chart .card-body .block-chart ul li:nth-child(even) {
-              color: #99999940; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-week {
-          display: -ms-flexbox;
-          display: flex;
-          position: absolute;
-          left: -30px;
-          bottom: -50px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-week li {
-            font-size: 10px;
-            margin: 0 4px 0 4px;
-            width: 40px; }
-            .main .grid-container .card-block-chart .card-body .block-chart .card-week li:nth-child(even) {
-              color: #99999990; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1 {
-          position: absolute;
-          left: 15px;
-          bottom: 0;
-          width: 20px;
-          height: 45%;
-          background-color: #497FFF;
-          z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-1:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2 {
-          position: absolute;
-          left: 65px;
-          bottom: 0;
-          width: 20px;
-          height: 50%;
-          background-color: #497FFF;
-          z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-2:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3 {
-          position: absolute;
-          left: 115px;
-          bottom: 0;
-          width: 20px;
-          height: 60%;
-          background-color: #497FFF;
-          z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-3:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4 {
-          position: absolute;
-          left: 165px;
-          bottom: 0;
-          width: 20px;
-          height: 55%;
-          background-color: #497FFF;
-          z-index: 1; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-chart-blocks-4:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div {
-          z-index: 0;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          border: solid 1px #F0F0F0;
-          height: 320px;
-          width: 50px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(1) {
-            left: 0; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(2) {
-            left: 50px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(3) {
-            left: 100px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-vertical > div:nth-child(4) {
-            left: 150px; }
-        .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div {
-          z-index: 0;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          border: solid 1px #F0F0F0;
-          height: 40px;
-          width: 200px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(1) {
-            bottom: 0; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(2) {
-            bottom: 40px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(3) {
-            bottom: 80px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(4) {
-            bottom: 120px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(5) {
-            bottom: 160px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(6) {
-            bottom: 200px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(7) {
-            bottom: 240px; }
-          .main .grid-container .card-block-chart .card-body .block-chart .card-grid-wrapper-horisontal > div:nth-child(8) {
-            bottom: 280px; }
+    .main .grid-container .card-block-chart .card-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      border-bottom: solid 1px #f0f0f0; }
+      .main .grid-container .card-block-chart .card-header h2 {
+        margin: 18px 24px 18px 24px;
+        font-size: 14px; }
+    .main .grid-container .card-block-chart .card-body .chart-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .main .grid-container .card-block-chart .card-body .chart-container .ct-chart {
+        margin-top: 30px;
+        height: 405px;
+        width: 240px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        color: #a3a3a3;
+        font-size: 10px; }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-label .ct-horizontal .ct-end {
+          margin-top: 60px; }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-grid {
+          stroke: #F0F0F0;
+          stroke-width: 1px; }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-a .ct-bar {
+          /* Colour of your bars */
+          stroke: #497FFF;
+          /* The width of your bars */
+          stroke-width: 4px;
+          /* Maybe you like round corners on your bars? */ }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-b .ct-bar {
+          /* Colour of your bars */
+          stroke: #7EA2FF;
+          /* The width of your bars */
+          stroke-width: 4px;
+          /* Maybe you like round corners on your bars? */ }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-c .ct-bar {
+          /* Colour of your bars */
+          stroke: #BACEFF;
+          /* The width of your bars */
+          stroke-width: 4px;
+          /* Maybe you like round corners on your bars? */ }
     .main .grid-container .card-header {
       display: -ms-flexbox;
       display: flex;
@@ -716,6 +577,8 @@ textarea {
       -ms-flex-align: center;
           align-items: center; }
       .main .grid-container .card-curve-chart .chartsContainer .ct-grid {
+        stroke: rgba(0, 0, 0, 0.2);
+        stroke-width: 1px;
         stroke-dasharray: none; }
       .main .grid-container .card-curve-chart .chartsContainer .ct-labels {
         font-family: Montserrat;

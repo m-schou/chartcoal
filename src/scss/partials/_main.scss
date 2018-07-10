@@ -116,8 +116,8 @@
       }
     }
     //ITEM 2 BLOCK CHART content
+
     .card-block-chart {
-      position: relative;
 
       .card-header {
         display: flex;
@@ -129,222 +129,285 @@
         }
       }
 
+
       .card-body {
-
-        .block-chart {
-        left: 72px;
-        bottom: 72px;
-        position: absolute;
-        //margin-top: 20px;
-        height: 100%;
-
-        ul {
-          position: absolute;
-          left: -86px;
-          bottom: -20px;
-          list-style-type: none;
-          li {
-            font-size: 10px;
-            font-weight: 400;
-            margin: 21px 0 21px 0;
-            color: #99999990;
-            &:nth-child(even) {
-              color: #99999940;
-            }
-          }
-        }
-
-        .card-week {
+        .chart-container {
           display: flex;
-          position: absolute;
-          left: -30px;
-          bottom: -50px;
-          li {
+          justify-content: center;
+          .ct-chart {
+            margin-top: 30px;
+            height: 405px;
+            width: 240px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            color: #a3a3a3;
             font-size: 10px;
-            margin: 0 4px 0 4px;
-            width: 40px;
-            &:nth-child(even) {
-              color: #99999990;
+
+
+            .ct-label .ct-horizontal .ct-end {
+              margin-top: 60px;
+            }
+
+            .ct-grid {
+              stroke: #F0F0F0;
+              stroke-width: 1px;
+            }
+
+            .ct-series-a .ct-bar {
+              /* Colour of your bars */
+              stroke: #497FFF;
+              /* The width of your bars */
+              stroke-width: 4px;
+              /* Maybe you like round corners on your bars? */
+              // stroke-linecap: round;
+            }
+
+
+            .ct-series-b .ct-bar {
+              /* Colour of your bars */
+              stroke: #7EA2FF;
+              /* The width of your bars */
+              stroke-width: 4px;
+              /* Maybe you like round corners on your bars? */
+              // stroke-linecap: round;
+            }
+
+
+            .ct-series-c .ct-bar {
+              /* Colour of your bars */
+              stroke: #BACEFF;
+              /* The width of your bars */
+              stroke-width: 4px;
+              /* Maybe you like round corners on your bars? */
+              // stroke-linecap: round;
             }
           }
         }
 
-        .card-chart-blocks-1 {
-          position: absolute;
-          left: 15px;
-          bottom: 0;
-          width: 20px;
-          height: 45%;
-          background-color: #497FFF;
-          z-index: 1;
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2;
-          }
-        }
-        .card-chart-blocks-2 {
-          position: absolute;
-          left: 65px;
-          bottom: 0;
-          width: 20px;
-          height: 50%;
-          background-color: #497FFF;
-          z-index: 1;
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2;
-          }
-        }
-        .card-chart-blocks-3 {
-          position: absolute;
-          left: 115px;
-          bottom: 0;
-          width: 20px;
-          height: 60%;
-          background-color: #497FFF;
-          z-index: 1;
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2;
-          }
-        }
-        .card-chart-blocks-4 {
-          position: absolute;
-          left: 165px;
-          bottom: 0;
-          width: 20px;
-          height: 55%;
-          background-color: #497FFF;
-          z-index: 1;
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 10%;
-            background-color: #BACEFF;
-            z-index: 3;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 30%;
-            background-color: #7EA2FF;
-            z-index: 2;
-          }
-        }
-
-        .card-grid-wrapper-vertical > div {
-          z-index: 0;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          border: solid 1px #F0F0F0;
-          height: 320px;
-          width: 50px;
-          &:nth-child(1) {
-            left: 0;
-          }
-          &:nth-child(2) {
-            left: 50px;
-          }
-          &:nth-child(3) {
-            left: 100px;
-          }
-          &:nth-child(4) {
-            left: 150px;
-          }
-        }
-
-        .card-grid-wrapper-horisontal > div {
-          z-index: 0;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          border: solid 1px #F0F0F0;
-          height: 40px;
-          width: 200px;
-          &:nth-child(1) {
-            bottom: 0;
-          }
-          &:nth-child(2) {
-            bottom: 40px;
-          }
-          &:nth-child(3) {
-            bottom: 80px;
-          }
-          &:nth-child(4) {
-            bottom: 120px;
-          }
-          &:nth-child(5) {
-            bottom: 160px;
-          }
-          &:nth-child(6) {
-            bottom: 200px;
-          }
-          &:nth-child(7) {
-            bottom: 240px;
-          }
-          &:nth-child(8) {
-            bottom: 280px;
-          }
-        }
-
       }
-      }
+
+      //.card-body {
+      //
+      //  .block-chart {
+      //  left: 72px;
+      //  bottom: 72px;
+      //  position: absolute;
+      //  //margin-top: 20px;
+      //  height: 100%;
+      //
+      //  ul {
+      //    position: absolute;
+      //    left: -86px;
+      //    bottom: -20px;
+      //    list-style-type: none;
+      //    li {
+      //      font-size: 10px;
+      //      font-weight: 400;
+      //      margin: 21px 0 21px 0;
+      //      color: #99999990;
+      //      &:nth-child(even) {
+      //        color: #99999940;
+      //      }
+      //    }
+      //  }
+      //
+      //  .card-week {
+      //    display: flex;
+      //    position: absolute;
+      //    left: -30px;
+      //    bottom: -50px;
+      //    li {
+      //      font-size: 10px;
+      //      margin: 0 4px 0 4px;
+      //      width: 40px;
+      //      &:nth-child(even) {
+      //        color: #99999990;
+      //      }
+      //    }
+      //  }
+      //
+      //  .card-chart-blocks-1 {
+      //    position: absolute;
+      //    left: 15px;
+      //    bottom: 0;
+      //    width: 20px;
+      //    height: 45%;
+      //    background-color: #497FFF;
+      //    z-index: 1;
+      //    &:before {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 10%;
+      //      background-color: #BACEFF;
+      //      z-index: 3;
+      //    }
+      //    &:after {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 30%;
+      //      background-color: #7EA2FF;
+      //      z-index: 2;
+      //    }
+      //  }
+      //  .card-chart-blocks-2 {
+      //    position: absolute;
+      //    left: 65px;
+      //    bottom: 0;
+      //    width: 20px;
+      //    height: 50%;
+      //    background-color: #497FFF;
+      //    z-index: 1;
+      //    &:before {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 10%;
+      //      background-color: #BACEFF;
+      //      z-index: 3;
+      //    }
+      //    &:after {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 30%;
+      //      background-color: #7EA2FF;
+      //      z-index: 2;
+      //    }
+      //  }
+      //  .card-chart-blocks-3 {
+      //    position: absolute;
+      //    left: 115px;
+      //    bottom: 0;
+      //    width: 20px;
+      //    height: 60%;
+      //    background-color: #497FFF;
+      //    z-index: 1;
+      //    &:before {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 10%;
+      //      background-color: #BACEFF;
+      //      z-index: 3;
+      //    }
+      //    &:after {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 30%;
+      //      background-color: #7EA2FF;
+      //      z-index: 2;
+      //    }
+      //  }
+      //  .card-chart-blocks-4 {
+      //    position: absolute;
+      //    left: 165px;
+      //    bottom: 0;
+      //    width: 20px;
+      //    height: 55%;
+      //    background-color: #497FFF;
+      //    z-index: 1;
+      //    &:before {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 10%;
+      //      background-color: #BACEFF;
+      //      z-index: 3;
+      //    }
+      //    &:after {
+      //      content: "";
+      //      position: absolute;
+      //      left: 0;
+      //      top: 0;
+      //      width: 20px;
+      //      height: 30%;
+      //      background-color: #7EA2FF;
+      //      z-index: 2;
+      //    }
+      //  }
+      //
+      //  .card-grid-wrapper-vertical > div {
+      //    z-index: 0;
+      //    position: absolute;
+      //    left: 0;
+      //    bottom: 0;
+      //    border: solid 1px #F0F0F0;
+      //    height: 320px;
+      //    width: 50px;
+      //    &:nth-child(1) {
+      //      left: 0;
+      //    }
+      //    &:nth-child(2) {
+      //      left: 50px;
+      //    }
+      //    &:nth-child(3) {
+      //      left: 100px;
+      //    }
+      //    &:nth-child(4) {
+      //      left: 150px;
+      //    }
+      //  }
+      //
+      //  .card-grid-wrapper-horisontal > div {
+      //    z-index: 0;
+      //    position: absolute;
+      //    left: 0;
+      //    bottom: 0;
+      //    border: solid 1px #F0F0F0;
+      //    height: 40px;
+      //    width: 200px;
+      //    &:nth-child(1) {
+      //      bottom: 0;
+      //    }
+      //    &:nth-child(2) {
+      //      bottom: 40px;
+      //    }
+      //    &:nth-child(3) {
+      //      bottom: 80px;
+      //    }
+      //    &:nth-child(4) {
+      //      bottom: 120px;
+      //    }
+      //    &:nth-child(5) {
+      //      bottom: 160px;
+      //    }
+      //    &:nth-child(6) {
+      //      bottom: 200px;
+      //    }
+      //    &:nth-child(7) {
+      //      bottom: 240px;
+      //    }
+      //    &:nth-child(8) {
+      //      bottom: 280px;
+      //    }
+      //  }
+      //
+      //}
+      //}
+
+
     }
+
+
+
+
 
     //ITEM 3 CURVE CHART content
 
@@ -361,78 +424,81 @@
 
 
 
-    $travelColor: #f6c61e;
-    $travelFill: #5DBCFF;
-    $slaColor: #4A7FFF;
-    $slaSubColor: #DAE6FF;
-    $speColor: #fb79f6;
-    $utilityColor: #42eb3e;
+      $travelColor: #f6c61e;
+      $travelFill: #5DBCFF;
+      $slaColor: #4A7FFF;
+      $slaSubColor: #DAE6FF;
+      $speColor: #fb79f6;
+      $utilityColor: #42eb3e;
 
-    .chartsContainer {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      .ct-grid {
-        stroke-dasharray: none;
-      }
-      .ct-labels {
-        font-family: Montserrat;
-        font-size: 10px;
-        font-weight: 500;
-      }
-    }
-
-    .ct-series-a .ct-bar {
-      /* Colour of your bars */
-      stroke: gold;
-      /* The width of your bars */
-      stroke-width: 20px;
-      /* Maybe you like round corners on your bars? */
-      // stroke-linecap: round;
-    }
-
-    .slaChart {
-      margin-top: 30px;
-      width: 326px;
-      height: 295px;
-      .ct-series-a {
-        .ct-line {
-          stroke: $slaSubColor;
-          stroke-width: 3px;
+      .chartsContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .ct-grid {
+          stroke: rgba(0,0,0,.2);
+          stroke-width: 1px;
+          stroke-dasharray: none;
+          //z-index: 0;
         }
-        .ct-point {
-          stroke: $slaSubColor;
-          transition: all 0.3s;
-          &:hover {
-            stroke-width: 15px;
+        .ct-labels {
+          font-family: Montserrat;
+          font-size: 10px;
+          font-weight: 500;
+        }
+      }
+
+      .ct-series-a .ct-bar {
+        /* Colour of your bars */
+        stroke: gold;
+        /* The width of your bars */
+        stroke-width: 20px;
+        /* Maybe you like round corners on your bars? */
+        // stroke-linecap: round;
+      }
+
+      .slaChart {
+        margin-top: 30px;
+        width: 326px;
+        height: 295px;
+        .ct-series-a {
+          .ct-line {
+            stroke: $slaSubColor;
+            stroke-width: 3px;
+          }
+          .ct-point {
+            stroke: $slaSubColor;
             transition: all 0.3s;
+            &:hover {
+              stroke-width: 15px;
+              transition: all 0.3s;
+            }
+          }
+          .ct-area {
+            fill: $slaSubColor;
+            fill-opacity: 1;
           }
         }
-        .ct-area {
-          fill: $slaSubColor;
-          fill-opacity: 1;
-        }
-      }
-      .ct-series-b {
-        .ct-line {
-          stroke: $slaColor;
-          stroke-width: 3px;
-        }
-        .ct-point {
-          stroke: $slaColor;
-          transition: all 0.3s;
-          &:hover {
-            stroke-width: 15px;
+        .ct-series-b {
+          .ct-line {
+            stroke: $slaColor;
+            stroke-width: 3px;
+          }
+          .ct-point {
+            stroke: $slaColor;
             transition: all 0.3s;
+            &:hover {
+              stroke-width: 15px;
+              transition: all 0.3s;
+            }
+          }
+          .ct-area {
+            fill: $slaColor;
+            fill-opacity: 1;
           }
         }
-        .ct-area {
-          fill: $slaColor;
-          fill-opacity: 1;
-        }
       }
-    }
     }
 
 
@@ -653,440 +719,440 @@
         }
       }
 
-     .chartjs-wrapper {
-       //top: 150px;
-       position: relative;
-       //left: 8%;
-       margin: 44px 42px 0 24px;
-       height: 200px;
+      .chartjs-wrapper {
+        //top: 150px;
+        position: relative;
+        //left: 8%;
+        margin: 44px 42px 0 24px;
+        height: 200px;
       }
     }
     //ITEM 9 POLE CHART content
     .card-pole-chart {
 
-        position: relative;
-        .card-header {
+      position: relative;
+      .card-header {
+        display: flex;
+        justify-content: left;
+        border-bottom: solid 1px #f0f0f0;
+        h2 {
+          margin: 16px 24px 0 24px;
+          font-size: 14px
+        }
+        .active {
+          border-bottom: 2px solid #3B75FF;
+          padding: 0 12px 14px 12px;
+        }
+        .inactive {
+          color: #909399;
+        }
+
+      }
+      .card-body {
+        left: 90px;
+        bottom: 60px;
+        position: absolute;
+        //margin-top: 20px;
+        height: 100%;
+        ul {
+          position: absolute;
+          left: -86px;
+          bottom: -44px;
+          list-style-type: none;
+          li {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 20px 0 20px 0;
+            color: #99999990;
+            &:nth-child(even) {
+              color: #99999940;
+            }
+          }
+        }
+
+        .card-week {
           display: flex;
-          justify-content: left;
-          border-bottom: solid 1px #f0f0f0;
-          h2 {
-            margin: 16px 24px 0 24px;
-            font-size: 14px
+          position: absolute;
+          left: -58px;
+          bottom: -50px;
+          li {
+            font-size: 12px;
+            margin: 0 16px 0 16px;
+            width: 40px;
+            &:nth-child(even) {
+              color: #99999990;
+            }
           }
-          .active {
-            border-bottom: 2px solid #3B75FF;
-            padding: 0 12px 14px 12px;
-          }
-          .inactive {
-            color: #909399;
-          }
+        }
+
+        .card-chart-blocks-1 {
+          position: absolute;
+          left: 2px;
+          bottom: 16px;
+          width: 8px;
+          height: 6%;
+          background-color: #ff4256;
+          z-index: 1;
 
         }
-        .card-body {
-          left: 90px;
-          bottom: 60px;
+        .card-chart-blocks-2 {
           position: absolute;
-          //margin-top: 20px;
-          height: 100%;
-          ul {
+          left: 20px;
+          bottom: 38px;
+          width: 8px;
+          height: 3%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
             position: absolute;
-            left: -86px;
-            bottom: -44px;
-            list-style-type: none;
-            li {
-              font-size: 14px;
-              font-weight: 400;
-              margin: 20px 0 20px 0;
-              color: #99999990;
-              &:nth-child(even) {
-                color: #99999940;
-              }
-            }
-          }
-
-          .card-week {
-            display: flex;
-            position: absolute;
-            left: -58px;
-            bottom: -50px;
-            li {
-              font-size: 12px;
-              margin: 0 16px 0 16px;
-              width: 40px;
-              &:nth-child(even) {
-                color: #99999990;
-              }
-            }
-          }
-
-          .card-chart-blocks-1 {
-            position: absolute;
-            left: 2px;
-            bottom: 16px;
-            width: 8px;
-            height: 6%;
-            background-color: #ff4256;
-            z-index: 1;
-
-          }
-          .card-chart-blocks-2 {
-            position: absolute;
-            left: 20px;
-            bottom: 38px;
-            width: 8px;
-            height: 3%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-3 {
-            position: absolute;
-            left: 40px;
-            bottom: 38px;
-            width: 8px;
-            height: 35%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-4 {
-            position: absolute;
-            left: 60px;
-            bottom: 38px;
-            width: 8px;
-            height: 32%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-5 {
-            position: absolute;
-            left: 80px;
-            bottom: 38px;
-            width: 8px;
-            height: 28%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-6 {
-            position: absolute;
-            left: 100px;
-            bottom: 38px;
-            width: 8px;
-            height: 36%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-7 {
-            position: absolute;
-            left: 120px;
-            bottom: 0;
+            left: 0;
+            top: 0;
             width: 8px;
             height: 10%;
-            background-color: #ff4256;
-            z-index: 1;
+            background-color: #BACEFF;
+            z-index: 3;
           }
-          .card-chart-blocks-8 {
-            position: absolute;
-            left: 140px;
-            bottom: 38px;
-            width: 8px;
-            height: 36%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-9 {
-            position: absolute;
-            left: 160px;
-            bottom: 38px;
-            width: 8px;
-            height: 23%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-10 {
-            position: absolute;
-            left: 180px;
-            bottom: 38px;
-            width: 8px;
-            height: 33%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-11 {
-            position: absolute;
-            left: 200px;
-            bottom: 38px;
-            width: 8px;
-            height: 29%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-          .card-chart-blocks-12 {
-            position: absolute;
-            left: 220px;
-            bottom: 38px;
-            width: 8px;
-            height: 18%;
-            background-color: #497FFF;
-            z-index: 1;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 10%;
-              background-color: #BACEFF;
-              z-index: 3;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 8px;
-              height: 30%;
-              background-color: #7EA2FF;
-              z-index: 2;
-            }
-          }
-
-          .grid-wrapper-vertical > div {
-            z-index: 0;
+          &:after {
+            content: "";
             position: absolute;
             left: 0;
-            bottom: 0;
-            border: solid 1px #F0F0F0;
-            height: 160px;
-            width: 50px;
-            &:nth-child(1) {
-              left: 0;
-            }
-            &:nth-child(2) {
-              left: 50px;
-            }
-            &:nth-child(3) {
-              left: 100px;
-            }
-            &:nth-child(4) {
-              left: 150px;
-            }
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
           }
-
-          .grid-wrapper-horisontal > div {
-            z-index: 0;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            border-top: solid 1px #F0F0F0;
-            height: 40px;
-            width: 230px;
-            &:nth-child(1) {
-              bottom: 0;
-            }
-            &:nth-child(2) {
-              bottom: 40px;
-            }
-            &:nth-child(3) {
-              bottom: 80px;
-            }
-            &:nth-child(4) {
-              bottom: 120px;
-            }
-            &:nth-child(5) {
-              bottom: 160px;
-            }
-            &:nth-child(6) {
-              bottom: 200px;
-            }
-            &:nth-child(7) {
-              bottom: 240px;
-            }
-            &:nth-child(8) {
-              bottom: 280px;
-            }
-          }
-
-
         }
+        .card-chart-blocks-3 {
+          position: absolute;
+          left: 40px;
+          bottom: 38px;
+          width: 8px;
+          height: 35%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-4 {
+          position: absolute;
+          left: 60px;
+          bottom: 38px;
+          width: 8px;
+          height: 32%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-5 {
+          position: absolute;
+          left: 80px;
+          bottom: 38px;
+          width: 8px;
+          height: 28%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-6 {
+          position: absolute;
+          left: 100px;
+          bottom: 38px;
+          width: 8px;
+          height: 36%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-7 {
+          position: absolute;
+          left: 120px;
+          bottom: 0;
+          width: 8px;
+          height: 10%;
+          background-color: #ff4256;
+          z-index: 1;
+        }
+        .card-chart-blocks-8 {
+          position: absolute;
+          left: 140px;
+          bottom: 38px;
+          width: 8px;
+          height: 36%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-9 {
+          position: absolute;
+          left: 160px;
+          bottom: 38px;
+          width: 8px;
+          height: 23%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-10 {
+          position: absolute;
+          left: 180px;
+          bottom: 38px;
+          width: 8px;
+          height: 33%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-11 {
+          position: absolute;
+          left: 200px;
+          bottom: 38px;
+          width: 8px;
+          height: 29%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+        .card-chart-blocks-12 {
+          position: absolute;
+          left: 220px;
+          bottom: 38px;
+          width: 8px;
+          height: 18%;
+          background-color: #497FFF;
+          z-index: 1;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 10%;
+            background-color: #BACEFF;
+            z-index: 3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 30%;
+            background-color: #7EA2FF;
+            z-index: 2;
+          }
+        }
+
+        .grid-wrapper-vertical > div {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border: solid 1px #F0F0F0;
+          height: 160px;
+          width: 50px;
+          &:nth-child(1) {
+            left: 0;
+          }
+          &:nth-child(2) {
+            left: 50px;
+          }
+          &:nth-child(3) {
+            left: 100px;
+          }
+          &:nth-child(4) {
+            left: 150px;
+          }
+        }
+
+        .grid-wrapper-horisontal > div {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-top: solid 1px #F0F0F0;
+          height: 40px;
+          width: 230px;
+          &:nth-child(1) {
+            bottom: 0;
+          }
+          &:nth-child(2) {
+            bottom: 40px;
+          }
+          &:nth-child(3) {
+            bottom: 80px;
+          }
+          &:nth-child(4) {
+            bottom: 120px;
+          }
+          &:nth-child(5) {
+            bottom: 160px;
+          }
+          &:nth-child(6) {
+            bottom: 200px;
+          }
+          &:nth-child(7) {
+            bottom: 240px;
+          }
+          &:nth-child(8) {
+            bottom: 280px;
+          }
+        }
+
+
+      }
     }
     //ITEM 10 UPLOADER content
     .card-uploader {

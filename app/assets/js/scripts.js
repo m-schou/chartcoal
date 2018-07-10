@@ -319,7 +319,7 @@ var lineChart = new Chartist.Line('.slaChart', {
     showArea: true,
     showLine: false,
     showPoint: false,
-    fullWidth: true,
+    responsive: true,
     plugins: [
         // Chartist.plugins.lineSelector()
     ],
@@ -337,23 +337,26 @@ var lineChart = new Chartist.Line('.slaChart', {
 // CHARTIST JS 2
 
 new Chartist.Bar('.ct-chart', {
-    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
     series: [
-        [800000, 1200000, 1400000, 1300000],
+        [800000, 1200000, 1300000, 900000],
         [200000, 400000, 500000, 300000],
         [100000, 200000, 400000, 600000]
     ]
 }, {
+    fullWidth: true,
+    fullHeight: true,
     stackBars: true,
     axisY: {
+        showGrid: true,
         labelInterpolationFnc: function(value) {
-            return (value / 1000) + 'k';
+            return (value / 10000) + 'k';
         }
     }
 }).on('draw', function(data) {
     if(data.type === 'bar') {
         data.element.attr({
-            style: 'stroke-width: 30px'
+            style: 'stroke-width: 20px'
         });
     }
 });
