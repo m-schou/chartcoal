@@ -381,17 +381,7 @@
         font-size: 10px;
         font-weight: 500;
       }
-
-      .ct-labels > div {
-        padding: 20px;
-      }
     }
-
-    .travelChart {
-      width: 470px;
-      height: 295px;
-    }
-
 
     .ct-series-a .ct-bar {
       /* Colour of your bars */
@@ -403,7 +393,8 @@
     }
 
     .slaChart {
-      width: 313px;
+      margin-top: 30px;
+      width: 326px;
       height: 295px;
       .ct-series-a {
         .ct-line {
@@ -443,6 +434,7 @@
       }
     }
     }
+
 
     //ITEM 4 PROGRESS LOADER content
     .card-progress-loader {

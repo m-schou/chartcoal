@@ -306,20 +306,20 @@ var myChart = new Chart(ctx, {
 
 // CHARTIST JS
 
-Chartist.plugins = Chartist.plugins || {};
-var data = {
+var lineChart = new Chartist.Line('.slaChart', {
     labels: ['January', '', 'February', '', 'March'],
     series: [
         // [0, 5, 8, 10, 7, 6, 5, 5, 4],
-        [0, 50, 35, 70, 50, 100],
+        [0, 50, 35, 70, 50, 90],
         [0 , 45, 25, 55, 35, 70]
     ]
-};
-
-var options = {
+}, {
     low: 0,
     high: 100,
     showArea: true,
+    showLine: false,
+    showPoint: false,
+    fullWidth: true,
     plugins: [
         // Chartist.plugins.lineSelector()
     ],
@@ -328,7 +328,32 @@ var options = {
         offset: 20
     },
     axisX: { showGrid: false }
-};
+});
 
-var lineChart = new Chartist.Line('.slaChart', data, options);
 
+
+
+
+// CHARTIST JS 2
+
+new Chartist.Bar('.ct-chart', {
+    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+    series: [
+        [800000, 1200000, 1400000, 1300000],
+        [200000, 400000, 500000, 300000],
+        [100000, 200000, 400000, 600000]
+    ]
+}, {
+    stackBars: true,
+    axisY: {
+        labelInterpolationFnc: function(value) {
+            return (value / 1000) + 'k';
+        }
+    }
+}).on('draw', function(data) {
+    if(data.type === 'bar') {
+        data.element.attr({
+            style: 'stroke-width: 30px'
+        });
+    }
+});
