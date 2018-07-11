@@ -1248,6 +1248,59 @@ textarea {
     overflow: hidden;
     grid-column: 9/13;
     grid-row: 8/11; }
+  @media screen and (max-width: 760px) {
+    .main .grid-container {
+      height: 4100px; }
+    .main .item1 {
+      overflow: scroll;
+      grid-column: 1/13;
+      grid-row: 1/2; }
+    .main .item2 {
+      overflow: scroll;
+      max-width: 100%;
+      grid-column: 1/13;
+      grid-row: 2/3; }
+    .main .item3 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 3/4; }
+    .main .item4 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 4/5; }
+    .main .item5 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 5/6; }
+    .main .item6 {
+      padding: 0;
+      overflow: hiddeN;
+      grid-column: 1/13;
+      grid-row: 6/7; }
+    .main .item7 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 7/8; }
+    .main .item8 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 9/10; }
+    .main .item9 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 10/11; }
+    .main .item10 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 11/12; }
+    .main .item11 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 12/13; }
+    .main .item12 {
+      overflow: hidden;
+      grid-column: 1/13;
+      grid-row: 12/13; } }
 
 button {
   text-align: center; }

@@ -1275,4 +1275,88 @@
     grid-column: 9/13;
     grid-row: 8/11;
   }
+
+
+
+  @media screen and (max-width: 760px){
+
+    .grid-container {
+    height: 4100px;
+    }
+
+    .item1 {
+      overflow: scroll;
+      grid-column: 1/13;
+      grid-row: 1/2;
+    }
+    .item2 {
+      overflow: scroll;
+      max-width: 100%;
+      grid-column: 1/13;
+           grid-row: 2/3;
+    }
+    .item3 {
+      overflow: hidden;
+      grid-column: 1/13;
+            grid-row: 3/4;
+    }
+    .item4 {
+      overflow: hidden;
+      grid-column: 1/13;
+            grid-row: 4/5;
+    }
+    .item5 {
+      overflow: hidden;
+      grid-column: 1/13;
+           grid-row: 5/6;
+    }
+    .item6 {
+      padding: 0;
+      overflow: hiddeN;
+      grid-column: 1/13;
+           grid-row: 6/7;
+    }
+    .item7 {
+      overflow: hidden;
+      grid-column: 1/13;
+           grid-row: 7/8;
+    }
+    .item8 {
+      overflow: hidden;
+      grid-column: 1/13;
+           grid-row: 9/10;
+    }
+    .item9 {
+      overflow: hidden;
+      grid-column: 1/13;
+           grid-row: 10/11;
+    }
+    .item10 {
+      overflow: hidden;
+       grid-column: 1/13;
+          grid-row: 11/12;
+    }
+    .item11 {
+      overflow: hidden;
+       grid-column: 1/13;
+          grid-row: 12/13;
+    }
+    .item12 {
+      overflow: hidden;
+      grid-column: 1/13;
+           grid-row: 12/13;
+    }
+  }
 }
+
+//@media screen and (max-width: 760px){
+//
+//  body {
+//    margin: 20px;
+//    main {
+//      //max-width: 380px;
+//      //margin: 0 auto 100px auto;
+//    }
+//
+//  }
+//}
