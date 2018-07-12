@@ -525,42 +525,47 @@ textarea {
       .main .grid-container .card-block-chart .card-header h2 {
         margin: 18px 24px 18px 24px;
         font-size: 14px; }
-    .main .grid-container .card-block-chart .card-body .chart-container {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      .main .grid-container .card-block-chart .card-body .chart-container .ct-chart {
-        margin-top: 30px;
-        height: 405px;
-        width: 240px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 500;
-        color: #a3a3a3;
-        font-size: 10px; }
-        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-label .ct-horizontal .ct-end {
-          margin-top: 60px; }
-        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-grid {
-          stroke: #F0F0F0;
-          stroke-width: 1px; }
-        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-a .ct-bar {
-          /* Colour of your bars */
-          stroke: #497FFF;
-          /* The width of your bars */
-          stroke-width: 4px;
-          /* Maybe you like round corners on your bars? */ }
-        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-b .ct-bar {
-          /* Colour of your bars */
-          stroke: #7EA2FF;
-          /* The width of your bars */
-          stroke-width: 4px;
-          /* Maybe you like round corners on your bars? */ }
-        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-c .ct-bar {
-          /* Colour of your bars */
-          stroke: #BACEFF;
-          /* The width of your bars */
-          stroke-width: 4px;
-          /* Maybe you like round corners on your bars? */ }
+    .main .grid-container .card-block-chart .card-body {
+      height: calc(100% - 59px);
+      position: relative; }
+      .main .grid-container .card-block-chart .card-body .chart-container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .main .grid-container .card-block-chart .card-body .chart-container .ct-chart {
+          font-family: Montserrat, sans-serif;
+          font-weight: 500;
+          color: #a3a3a3;
+          font-size: 10px;
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          right: 20px;
+          bottom: 20px; }
+          .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-label .ct-horizontal .ct-end {
+            margin-top: 60px; }
+          .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-grid {
+            stroke: #F0F0F0;
+            stroke-width: 1px; }
+          .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-a .ct-bar {
+            /* Colour of your bars */
+            stroke: #497FFF;
+            /* The width of your bars */
+            stroke-width: 4px;
+            /* Maybe you like round corners on your bars? */ }
+          .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-b .ct-bar {
+            /* Colour of your bars */
+            stroke: #7EA2FF;
+            /* The width of your bars */
+            stroke-width: 4px;
+            /* Maybe you like round corners on your bars? */ }
+          .main .grid-container .card-block-chart .card-body .chart-container .ct-chart .ct-series-c .ct-bar {
+            /* Colour of your bars */
+            stroke: #BACEFF;
+            /* The width of your bars */
+            stroke-width: 4px;
+            /* Maybe you like round corners on your bars? */ }
     .main .grid-container .card-header {
       display: -ms-flexbox;
       display: flex;

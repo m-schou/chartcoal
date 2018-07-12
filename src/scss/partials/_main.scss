@@ -131,18 +131,24 @@
 
 
       .card-body {
+        height: calc(100% - 59px);
+        position:  relative;
         .chart-container {
           display: flex;
           justify-content: center;
           .ct-chart {
-            margin-top: 30px;
-            height: 405px;
-            width: 240px;
+            //margin-top: 30px;
+            //height: 405px;
+            //width: 240px;
             font-family: Montserrat, sans-serif;
             font-weight: 500;
             color: #a3a3a3;
             font-size: 10px;
-
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
 
             .ct-label .ct-horizontal .ct-end {
               margin-top: 60px;
