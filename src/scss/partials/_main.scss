@@ -186,223 +186,6 @@
 
       }
 
-      //.card-body {
-      //
-      //  .block-chart {
-      //  left: 72px;
-      //  bottom: 72px;
-      //  position: absolute;
-      //  //margin-top: 20px;
-      //  height: 100%;
-      //
-      //  ul {
-      //    position: absolute;
-      //    left: -86px;
-      //    bottom: -20px;
-      //    list-style-type: none;
-      //    li {
-      //      font-size: 10px;
-      //      font-weight: 400;
-      //      margin: 21px 0 21px 0;
-      //      color: #99999990;
-      //      &:nth-child(even) {
-      //        color: #99999940;
-      //      }
-      //    }
-      //  }
-      //
-      //  .card-week {
-      //    display: flex;
-      //    position: absolute;
-      //    left: -30px;
-      //    bottom: -50px;
-      //    li {
-      //      font-size: 10px;
-      //      margin: 0 4px 0 4px;
-      //      width: 40px;
-      //      &:nth-child(even) {
-      //        color: #99999990;
-      //      }
-      //    }
-      //  }
-      //
-      //  .card-chart-blocks-1 {
-      //    position: absolute;
-      //    left: 15px;
-      //    bottom: 0;
-      //    width: 20px;
-      //    height: 45%;
-      //    background-color: #497FFF;
-      //    z-index: 1;
-      //    &:before {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 10%;
-      //      background-color: #BACEFF;
-      //      z-index: 3;
-      //    }
-      //    &:after {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 30%;
-      //      background-color: #7EA2FF;
-      //      z-index: 2;
-      //    }
-      //  }
-      //  .card-chart-blocks-2 {
-      //    position: absolute;
-      //    left: 65px;
-      //    bottom: 0;
-      //    width: 20px;
-      //    height: 50%;
-      //    background-color: #497FFF;
-      //    z-index: 1;
-      //    &:before {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 10%;
-      //      background-color: #BACEFF;
-      //      z-index: 3;
-      //    }
-      //    &:after {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 30%;
-      //      background-color: #7EA2FF;
-      //      z-index: 2;
-      //    }
-      //  }
-      //  .card-chart-blocks-3 {
-      //    position: absolute;
-      //    left: 115px;
-      //    bottom: 0;
-      //    width: 20px;
-      //    height: 60%;
-      //    background-color: #497FFF;
-      //    z-index: 1;
-      //    &:before {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 10%;
-      //      background-color: #BACEFF;
-      //      z-index: 3;
-      //    }
-      //    &:after {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 30%;
-      //      background-color: #7EA2FF;
-      //      z-index: 2;
-      //    }
-      //  }
-      //  .card-chart-blocks-4 {
-      //    position: absolute;
-      //    left: 165px;
-      //    bottom: 0;
-      //    width: 20px;
-      //    height: 55%;
-      //    background-color: #497FFF;
-      //    z-index: 1;
-      //    &:before {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 10%;
-      //      background-color: #BACEFF;
-      //      z-index: 3;
-      //    }
-      //    &:after {
-      //      content: "";
-      //      position: absolute;
-      //      left: 0;
-      //      top: 0;
-      //      width: 20px;
-      //      height: 30%;
-      //      background-color: #7EA2FF;
-      //      z-index: 2;
-      //    }
-      //  }
-      //
-      //  .card-grid-wrapper-vertical > div {
-      //    z-index: 0;
-      //    position: absolute;
-      //    left: 0;
-      //    bottom: 0;
-      //    border: solid 1px #F0F0F0;
-      //    height: 320px;
-      //    width: 50px;
-      //    &:nth-child(1) {
-      //      left: 0;
-      //    }
-      //    &:nth-child(2) {
-      //      left: 50px;
-      //    }
-      //    &:nth-child(3) {
-      //      left: 100px;
-      //    }
-      //    &:nth-child(4) {
-      //      left: 150px;
-      //    }
-      //  }
-      //
-      //  .card-grid-wrapper-horisontal > div {
-      //    z-index: 0;
-      //    position: absolute;
-      //    left: 0;
-      //    bottom: 0;
-      //    border: solid 1px #F0F0F0;
-      //    height: 40px;
-      //    width: 200px;
-      //    &:nth-child(1) {
-      //      bottom: 0;
-      //    }
-      //    &:nth-child(2) {
-      //      bottom: 40px;
-      //    }
-      //    &:nth-child(3) {
-      //      bottom: 80px;
-      //    }
-      //    &:nth-child(4) {
-      //      bottom: 120px;
-      //    }
-      //    &:nth-child(5) {
-      //      bottom: 160px;
-      //    }
-      //    &:nth-child(6) {
-      //      bottom: 200px;
-      //    }
-      //    &:nth-child(7) {
-      //      bottom: 240px;
-      //    }
-      //    &:nth-child(8) {
-      //      bottom: 280px;
-      //    }
-      //  }
-      //
-      //}
-      //}
-
-
     }
 
 
@@ -1280,6 +1063,12 @@
 
   @media screen and (max-width: 760px){
 
+
+
+    .grid-wrapper, header {
+     margin: 20px;
+    }
+
     .grid-container {
     height: 4100px;
     }
@@ -1324,22 +1113,22 @@
     .item8 {
       overflow: hidden;
       grid-column: 1/13;
-           grid-row: 9/10;
+           grid-row: 8/9;
     }
     .item9 {
       overflow: hidden;
       grid-column: 1/13;
-           grid-row: 10/11;
+           grid-row: 9/10;
     }
     .item10 {
       overflow: hidden;
        grid-column: 1/13;
-          grid-row: 11/12;
+          grid-row: 10/11;
     }
     .item11 {
       overflow: hidden;
        grid-column: 1/13;
-          grid-row: 12/13;
+          grid-row: 11/12;
     }
     .item12 {
       overflow: hidden;

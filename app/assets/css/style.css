@@ -1249,6 +1249,8 @@ textarea {
     grid-column: 9/13;
     grid-row: 8/11; }
   @media screen and (max-width: 760px) {
+    .main .grid-wrapper, .main header {
+      margin: 20px; }
     .main .grid-container {
       height: 4100px; }
     .main .item1 {
@@ -1284,19 +1286,19 @@ textarea {
     .main .item8 {
       overflow: hidden;
       grid-column: 1/13;
-      grid-row: 9/10; }
+      grid-row: 8/9; }
     .main .item9 {
       overflow: hidden;
       grid-column: 1/13;
-      grid-row: 10/11; }
+      grid-row: 9/10; }
     .main .item10 {
       overflow: hidden;
       grid-column: 1/13;
-      grid-row: 11/12; }
+      grid-row: 10/11; }
     .main .item11 {
       overflow: hidden;
       grid-column: 1/13;
-      grid-row: 12/13; }
+      grid-row: 11/12; }
     .main .item12 {
       overflow: hidden;
       grid-column: 1/13;
