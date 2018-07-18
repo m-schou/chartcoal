@@ -9,6 +9,9 @@
 })(jQuery, window, document);
 
 
+
+
+
 // CHART JS -start
 
 //
@@ -352,3 +355,4 @@ new Chartist.Bar('.ct-chart', {
         });
     }
 });
+

@@ -13,15 +13,35 @@
   <link href="assets/css/style.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
 
-  <script src="assets/components/modernizr/modernizr.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous"></script>
+  <!--<link rel="stylesheet" href="jquery-ui.min.css">-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<script>
+    $(function(){
+        $("#datepicker").datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+    });
+
+</script>
+
+
+
+  <!--<script src="external/jquery/jquery.js"></script>-->
+  <!--<script src="jquery-ui.min.js"></script>-->
+
+  <!--<script src="assets/components/modernizr/modernizr.js"></script>-->
+  <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"-->
+          <!--integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="-->
+          <!--crossorigin="anonymous"></script>-->
 
 </head>
 <body>
@@ -149,7 +169,10 @@
       </section>
 
       <section class="card card-theme-white card-calender item5">
-        <img src="assets/img/calender.png">
+        <!--<img src="assets/img/calender.png">-->
+        <div id="datepicker"></div>
+
+
       </section>
 
       <!--@TODO Fix list structure-->
