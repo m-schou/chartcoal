@@ -1065,9 +1065,15 @@
   }
 
 
-
-
-
+  .ui-state-default, .ui-widget-content .ui-state-default {
+    color: #909399;
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active {
+    color: white;
+  }
+  .ui-state-active, .ui-widget-content .ui-state-hover {
+    color: white;
+  }
 
 
 
