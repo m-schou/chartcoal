@@ -1203,6 +1203,51 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
       margin: 2px 20px 0 20px; }
+  .main body {
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 50px; }
+  .main .demoHeaders {
+    margin-top: 2em; }
+  .main #dialog-link {
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative; }
+  .main #dialog-link span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px; }
+  .main #icons {
+    margin: 0;
+    padding: 0; }
+  .main #icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none; }
+  .main #icons span.ui-icon {
+    float: left;
+    margin: 0 4px; }
+  .main .fakewindowcontain .ui-widget-overlay {
+    position: absolute; }
+  .main select {
+    width: 200px; }
+  .main .ui-state-active, .main .ui-widget-content .ui-state-active {
+    border-radius: 100%;
+    text-align: center; }
+  .main .ui-datepicker td a {
+    display: block;
+    padding: .2em;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none; }
+  .main .ui-datepicker td {
+    border: 0;
+    padding: 7px;
+    height: 32px; }
   .main .item1 {
     overflow: scroll;
     grid-column: 1/6;
