@@ -1,3 +1,20 @@
+# Coalchart Project
+
+**Chart Libraries used:**
+<br>Chartist.js 
+<br>Chart.js
+
+**Scaffolding:**
+This is an example project of graphics build with various javascript libraries.
+The project is build within FastShell. FastShell's scaffolding is lightweight and super easy. It takes into account a build directory of which you'll compile all your necessary code into. It keeps precious development files (raw .scss and .js) out of deployment, with a view that you'll be deploying just the contents of the app folder onto the server.
+
+**Preview:**
+[View project](http://madsschou.com//chartcoal/app/index.html)
+
+![alt text](app/assets/img/project-screenshot.png)
+
+
+
 # FastShell
 [![Build Status](https://travis-ci.org/HosseinKarami/fastshell.png?branch=master)](https://travis-ci.org/HosseinKarami/fastshell)
 
